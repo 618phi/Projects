@@ -1,35 +1,21 @@
 <DOCTYPE! html>
 <html lang="en-ca">
 <head>
-  <meta charset="utf-8">
-  <title>618-Projects</title>
+	<meta charset="utf-8">
+	<title>618-Projects</title>
 </head>
 <body>
     <header>
-        <h1>
-	        <h1>
-                618-Projects
-            </h1>
-	    </h1>
-		<nav>
-			<ul>
-				<li>
-					<a href="{{site.baseurl}}/index.html">
-						Home
-					</a>
-				</li>
-				<li>
-					<a href="{{site.baseurl}}/news.html">
-						News
-					</a>
-				</li>
-			</ul>
-		</nav>
+	    <h2>
+            618-Projects
+        </h2>
+		{% include nav.html %}
 	</header>
 	
 {{content}}
 
 	<footer>
+		{% include nav.html %}
 		<p>
 			&copy 618-Projects 2017
 		<p>
