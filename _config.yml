@@ -3,3 +3,5 @@ markdown: redcarpet
 baseurl: /Projects
 
 exclude: ['README.md']
+
+permalink: pretty
