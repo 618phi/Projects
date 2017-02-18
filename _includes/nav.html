@@ -1,17 +1,17 @@
 <nav>
-	<ul>
+	<ul class='nav {{include.navclass}}'>
 		<li>
-			<a href="{{site.baseurl}}/index.html" class="{% if page.url == /index.html %}current{% endif %}">
+			<a href="{{site.baseurl}}/index.html" {% if page.url == '/index.html' %}class="current"{% endif %}>
 				Home
 			</a>
 		</li>
 		<li>
-			<a href="{{site.baseurl}}/news.html">
+			<a href="{{site.baseurl}}/news.html" {% if page.url == '/news.html' %}class="current"{% endif %}>
 				News
 			</a>
 		</li>
 		<li>
-			<a href="{{site.baseurl}}/sql.html">
+			<a href="{{site.baseurl}}/sql.html" {% if page.url == '/sql.html' %}class="current"{% endif %}>
 				618-MySQL
 			</a>
 		</li>

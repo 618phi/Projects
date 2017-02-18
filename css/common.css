@@ -1,9 +1,27 @@
+
+
 html {
 	margin: 0;
 	padding: 0;
 	font: normal 100%/1.4 Georgia,serif;
 }
-.current {
-	background: #000531
-	color: #fff
+a {
+	text-decoration: none;
 }
+ul {
+	list-style:none;
+}
+.current {
+	background: lightblue;
+	color: white;
+}
+.nav {
+	margin: 0;
+	padding: 0;
+}
+.nav-top {
+	font-size: 1.1rem;
+}
+.nav-bottom{
+	font-size: .8rem;
+} 
