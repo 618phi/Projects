@@ -1,12 +1,13 @@
-<nav>
-	<ul class='nav clearfix {{include.navclass}}'>
+<nav class='nav  {{include.navclass}}'>
+	<ul>
 		<li>
 			<a href="{{site.baseurl}}/" {% if page.url == '/' or  page.url == '/index.html' %}class="current"{% endif %}>
 				Home
 			</a>
 		</li>
 		<li>
-			<a href="{{site.baseurl}}/news.html" {% if page.url == '/news.html' %}class="current"{% endif %}>
+			<a href="{{site.baseurl}}/posts-page.html" 
+			{% if page.url contains '/posts-page.html' or page.url contains 'java-news.html' or page.url contains 'math-news.html' %} class="current"{% endif %}>
 				News
 			</a>
 		</li>
@@ -15,5 +16,6 @@
 				618-MySQL
 			</a>
 		</li>
-	</ul>
+	</ul>	
 </nav>
+

@@ -1,0 +1,22 @@
+---
+layout: news
+---
+
+<h1>
+	Math 618-Projects Posts
+</h1>
+
+<post>
+<ul>
+   {% for m in site.categories.math %}
+	<li>
+		<a href="">
+			{{m.title}}
+		</a>
+		<p>
+			{{m.meta}}
+		</p>
+	</li>
+	{% endfor %}
+</ul>
+</post>

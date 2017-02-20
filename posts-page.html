@@ -1,0 +1,20 @@
+---
+layout: news
+---
+<h1>
+	618-Projects Posts
+</h1>
+<post>
+	<ul>
+		{% for x in site.posts %}
+		<li>
+			<a href="">
+				{{x.title}}
+			</a>
+			<p>
+				{{x.meta}}
+			</p>
+		</li>
+		{% endfor %}
+	</ul>
+</post>

@@ -1,0 +1,22 @@
+---
+layout: news
+---
+
+<h1>
+	Java 618-Projects Posts
+</h1>
+
+<post>
+<ul>
+   {% for j in site.categories.java %}
+	<li>
+		<a href="">
+			{{j.title}}
+		</a>
+		<p>
+			{{j.meta}}
+		</p>
+	</li>
+	{% endfor %}
+</ul>
+</post>

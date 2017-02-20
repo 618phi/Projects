@@ -13,3 +13,30 @@ layout: default
 	<br>
 	I will also have a lot of math stuff linked.
 </p>
+
+<h2>
+	Recent Posts
+</h2>
+
+<ul>
+	{% for j in site.categories.java limit:1 %}
+	<li>
+		<a href="">
+			{{j.title}}
+		</a>
+		<p>
+			{{j.meta}}
+		</p>
+	</li>
+	{% endfor %}
+	{% for m in site.categories.math limit:1 %}
+	<li>
+		<a href="">
+			{{m.title}}
+		</a>
+		<p>
+			{{m.meta}}
+		</p>
+	</li>
+</ul>
+	{% endfor %}

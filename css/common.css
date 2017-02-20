@@ -11,7 +11,16 @@ ul {
 }
 nav ul li {
 	float: left;
-	padding-right: 5px;
+	padding-right: 10px;
+}
+post ul li {
+    border-bottom: 2px dotted #bbbbbb;
+}
+.c {
+	float: right;
+	margin: 0;
+	margin-right: 10px;
+	font-size: .8rem;
 }
 .current {
 	background: lightblue;
@@ -22,12 +31,24 @@ nav ul li {
 	padding: 0;
 }
 .nav-top {
+	margin-bottom: 5px;
 	font-size: 1.1rem;
+	 clear: both;
+    overflow:hidden;
 }
 .nav-bottom{
+	margin-top: 5px;
 	font-size: .8rem;
 } 
 .clearfix {
     clear: both;
     overflow:hidden;
+}
+.site-header {
+    border-bottom: 2px solid #999;
+}
+.site-footer {
+    margin-top: 30px;
+	margin-bottom: 50px;
+    border-top: 2px solid #999;
 }
