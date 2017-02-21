@@ -1,0 +1,20 @@
+---
+layout: project
+---
+
+<h1>
+	Java Projects
+</h1>
+
+<ul>
+	{% for p in site.data.plist %}
+	{% if p.type == 'java' %}
+	<li>
+		<a href="{{site.baseurl}}/Projects//{{p.folder}}">
+			{{p.title}}
+		</a>
+		{{p.content | markdownify}}
+	</li>
+	{% endif %}
+	{% endfor %}
+</ul>

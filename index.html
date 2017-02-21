@@ -3,7 +3,7 @@ layout: default
 ---
 
 <h1>
-	618-Home
+	Home
 </h1>
 	
 <p>
@@ -19,9 +19,9 @@ layout: default
 </h2>
 
 <ol>
-	{% for p in site.data.plist %}
+	{% for p in site.data.plist limit:2%}
 	<li>
-		<a href="{{site.baseurl}}/{{p.folder}}">
+		<a href="{{site.baseurl}}/Projects//{{p.folder}}">
 			{{p.title}}
 		</a>
 		{{p.content | markdownify}}

@@ -1,0 +1,18 @@
+---
+layout: project
+---
+
+<h1>
+	Projects
+</h1>
+
+<ul>
+	{% for p in site.data.plist %}
+	<li>
+		<a href="{{site.baseurl}}/Projects//{{p.folder}}">
+			{{p.title}}
+		</a>
+		{{p.content | markdownify}}
+	</li>
+	{% endfor %}
+</ul>

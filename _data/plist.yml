@@ -1,7 +1,20 @@
 - title: 618-MySQL
-  folder: sql.html
+  folder: JavaProjects/sql.html
+  type: java
   content: 'The project matter for 618-MySQL.'
   
 - title: 618-MathSite
-  folder: msite.html
+  folder: MathProjects/msite.html
+  type: math
   content: 'The project matter for 618-MathSite.'
+  
+- title: 618-Tinnitus
+  folder: JavaProjects/tin.html
+  type: java
+  content: 'The project matter for 618-Tinnitus.'
+  
+- title: 618-MathCalc
+  folder: MathProjects/calc.html
+  type: math
+  content: 'The project matter for 618-MathCalc.'
+  
