@@ -21,7 +21,7 @@ layout: default
 <ul>
 	{% for j in site.categories.java limit:1 %}
 	<li>
-		<a href="">
+		<a href="{{site.baseurl}}{{j.url}}">
 			{{j.title}}
 		</a>
 		<p>
@@ -31,7 +31,7 @@ layout: default
 	{% endfor %}
 	{% for m in site.categories.math limit:1 %}
 	<li>
-		<a href="">
+		<a href="{{site.baseurl}}{{m.url}}">
 			{{m.title}}
 		</a>
 		<p>
