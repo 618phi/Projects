@@ -15,6 +15,21 @@ layout: default
 </p>
 
 <h2>
+	Top Projects
+</h2>
+
+<ol>
+	{% for p in site.data.plist %}
+	<li>
+		<a href="{{site.baseurl}}/{{p.folder}}">
+			{{p.title}}
+		</a>
+		{{p.content | markdownify}}
+	</li>
+	{% endfor %}
+</ol>
+
+<h2>
 	Recent Posts
 </h2>
 
