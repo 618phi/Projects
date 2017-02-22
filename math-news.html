@@ -3,20 +3,21 @@ layout: news
 ---
 
 <h1>
-	Math Project Posts
+    Math Project Posts
 </h1>
 
 <div>
-<ul>
-   {% for m in site.categories.math %}
-	<li>
-		<a href="{{site.baseurl}}{{m.url}}">
-			{{m.title}}
-		</a>
-		<p>
-			{{m.meta}}
-		</p>
-	</li>
-	{% endfor %}
-</ul>
+    <ul>
+        {% for m in site.categories.math %}
+        <li>
+            <a href="{{site.baseurl}}{{m.url}}">
+                <img src="{{ site.baseurl }}/images/{{ m.image }}" alt='({{m.category}}Project)'>
+                {{m.title}}
+            </a>
+            <p>
+                {{m.meta}}
+            </p>
+        </li>
+        {% endfor %}
+    </ul>
 </div>

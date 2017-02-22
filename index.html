@@ -18,6 +18,7 @@ layout: default
     {% for p in site.data.plist limit:2%}
     <li>
         <a href="{{site.baseurl}}/Projects//{{p.folder}}">
+            <img src="{{ site.baseurl }}/images/{{ p.image }}" alt='({{p.type}}Project)'>
             {{p.title}}
         </a>
         {{p.content | markdownify}}
@@ -26,13 +27,14 @@ layout: default
 </ol>
 
 <h2>
-    Latest Java Project Post
+    Latest Posts
 </h2>
 
 <ul>
-    {% for j in site.categories.java limit:1 %}
+    {% for j in site.posts limit: 2%}
     <li>
         <a href="{{site.baseurl}}{{j.url}}">
+            <img src="{{ site.baseurl }}/images/{{ j.image }}" alt='({{j.category}}Project)'>
             {{j.title}}
         </a>
         <p>
@@ -41,21 +43,3 @@ layout: default
     </li>
     {% endfor %}
 </ul>
-
-
-    <h2>
-        Latest Math Project Post
-    </h2>
-
-<ul>
-    {% for m in site.categories.math limit:1 %}
-    <li>
-        <a href="{{site.baseurl}}{{m.url}}">
-            {{m.title}}
-        </a>
-        <p>
-            {{m.meta}}
-        </p>
-    </li>
-</ul>
-{% endfor %}

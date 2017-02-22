@@ -10,8 +10,8 @@ layout: project
     <ul>
         {% for p in site.data.plist %}
         <li>
-            <img src="{{ site.baseurl }}/images/{{ p.image }}" alt=''>
             <a href="{{site.baseurl}}/Projects//{{p.folder}}">
+                <img src="{{ site.baseurl }}/images/{{ p.image }}" alt='({{p.type}}Project)'>
                 {{p.title}}
             </a>
             <a href="{{p.source}}" target='blank' style='color: green; padding-left: 10px;'>

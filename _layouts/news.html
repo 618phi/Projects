@@ -3,18 +3,20 @@ layout: default
 ---
 
 <nav class='nav clearfix'>
-	<ul>
-		<li>
-			<a href="{{site.baseurl}}/java-news.html" {% if page.url == '/java-news.html' %}class="current"{% endif %} style='color: green;'>
-				All Java Projects Posts
-			</a>
-		</li>
-		<li>
-			<a href="{{site.baseurl}}/math-news.html" {% if page.url == '/math-news.html' %}class="current"{% endif %} style='color: green;'>
-				All Math Projects Posts
-			</a>
-		</li>
-	</ul>
+    <ul>
+        <li>
+            <a href="{{site.baseurl}}/posts-page.html" {% if page.url == '/posts-page.html' %}class="current"{% endif %} style='color: green;'>
+               All Posts </a>
+        </li>
+        <li>
+            <a href="{{site.baseurl}}/java-news.html" {% if page.url contains 'java' %}class="current"{% endif %} style='color: green;'>
+               Java Projects Posts </a>
+        </li>
+        <li>
+            <a href="{{site.baseurl}}/math-news.html" {% if page.url contains 'math' %}class="current"{% endif %} style='color: green;'>
+               Math Projects Posts </a>
+        </li>
+    </ul>
 </nav>
 
 {{content}}

@@ -2,19 +2,20 @@
 layout: news
 ---
 <h1>
-	Project Posts
+    Project Posts
 </h1>
 <div>
-	<ul>
-		{% for x in site.posts %}
-		<li>
-			<a href="{{site.baseurl}}{{x.url}}">
-				{{x.title}}
-			</a>
-			<p>
-				{{x.meta}}
-			</p>
-		</li>
-		{% endfor %}
-	</ul>
+    <ul>
+        {% for x in site.posts %}
+        <li>
+            <a href="{{site.baseurl}}{{x.url}}">
+                <img src="{{ site.baseurl }}/images/{{ x.image }}" alt='({{x.category}}Project)'>
+                {{x.title}}
+            </a>
+            <p>
+                {{x.meta}}
+            </p>
+        </li>
+        {% endfor %}
+    </ul>
 </div>
