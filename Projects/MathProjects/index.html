@@ -3,18 +3,23 @@ layout: project
 ---
 
 <h1>
-	Math Projects
+    Math Projects
 </h1>
 
-<ul>
-	{% for p in site.data.plist %}
-	{% if p.type == 'math' %}
-	<li>
-		<a href="{{site.baseurl}}/Projects//{{p.folder}}">
-			{{p.title}}
-		</a>
-		{{p.content | markdownify}}
-	</li>
-	{% endif %}
-	{% endfor %}
-</ul>
+<div>
+    <ul>
+        {% for p in site.data.plist %}
+        {% if p.type == 'math' %}
+        <li>
+            <a href="{{site.baseurl}}/Projects//{{p.folder}}">
+                {{p.title}}
+            </a>
+            <a href="{{p.source}}" target='blank' style='color: green; padding-left: 10px;'>
+                Video Link
+            </a>
+            {{p.content | markdownify}}
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>
