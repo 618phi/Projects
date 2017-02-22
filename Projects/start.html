@@ -7,17 +7,18 @@ layout: project
 </h1>
 
 <div>
-<ul>
-    {% for p in site.data.plist %}
-    <li>
-        <a href="{{site.baseurl}}/Projects//{{p.folder}}">
-            {{p.title}}
-        </a>
-        <a href="{{p.source}}" target='blank' style='color: green; padding-left: 10px;'>
-            Video Link
-        </a>
-        {{p.content | markdownify}}
-    </li>
-    {% endfor %}
-</ul>
+    <ul>
+        {% for p in site.data.plist %}
+        <li>
+            <img src="{{ site.baseurl }}/images/{{ p.image }}" alt=''>
+            <a href="{{site.baseurl}}/Projects//{{p.folder}}">
+                {{p.title}}
+            </a>
+            <a href="{{p.source}}" target='blank' style='color: green; padding-left: 10px;'>
+                Video Link
+            </a>
+            {{p.content | markdownify}}
+        </li>
+        {% endfor %}
+    </ul>
 </div>
