@@ -3,55 +3,59 @@ layout: default
 ---
 
 <h1>
-	Home
+    Home
 </h1>
-	
+
 <p>
-	This is going to be my projects home page.
-	<br>
-	I will be showing links to all my Java projects here.
-	<br>
-	I will also have a lot of math stuff linked.
+    This is going to be my projects home page. I will be giving written details here.
 </p>
 
 <h2>
-	Top Projects
+    Top Projects
 </h2>
 
 <ol>
-	{% for p in site.data.plist limit:2%}
-	<li>
-		<a href="{{site.baseurl}}/Projects//{{p.folder}}">
-			{{p.title}}
-		</a>
-		{{p.content | markdownify}}
-	</li>
-	{% endfor %}
+    {% for p in site.data.plist limit:2%}
+    <li>
+        <a href="{{site.baseurl}}/Projects//{{p.folder}}">
+            {{p.title}}
+        </a>
+        {{p.content | markdownify}}
+    </li>
+    {% endfor %}
 </ol>
 
 <h2>
-	Recent Posts
+    Latest Java Project Post
 </h2>
 
 <ul>
-	{% for j in site.categories.java limit:1 %}
-	<li>
-		<a href="{{site.baseurl}}{{j.url}}">
-			{{j.title}}
-		</a>
-		<p>
-			{{j.meta}}
-		</p>
-	</li>
-	{% endfor %}
-	{% for m in site.categories.math limit:1 %}
-	<li>
-		<a href="{{site.baseurl}}{{m.url}}">
-			{{m.title}}
-		</a>
-		<p>
-			{{m.meta}}
-		</p>
-	</li>
+    {% for j in site.categories.java limit:1 %}
+    <li>
+        <a href="{{site.baseurl}}{{j.url}}">
+            {{j.title}}
+        </a>
+        <p>
+            {{j.meta}}
+        </p>
+    </li>
+    {% endfor %}
 </ul>
-	{% endfor %}
+
+
+    <h2>
+        Latest Math Project Post
+    </h2>
+
+<ul>
+    {% for m in site.categories.math limit:1 %}
+    <li>
+        <a href="{{site.baseurl}}{{m.url}}">
+            {{m.title}}
+        </a>
+        <p>
+            {{m.meta}}
+        </p>
+    </li>
+</ul>
+{% endfor %}

@@ -13,11 +13,8 @@ nav ul li {
 	float: left;
 	padding-right: 10px;
 }
-post {
-	margin:0;
-	padding:0;
-}
-post ul li {
+
+div ul li {
     border-bottom: 2px dotted #bbbbbb;
 	margin-bottom: 5px;
 }
