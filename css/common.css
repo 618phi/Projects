@@ -1,46 +1,50 @@
 html {
-	margin: 0;
-	padding: 0;
-	font: normal 100%/1.4 Georgia,serif;
+    margin: 0;
+    padding: 0;
+    font: normal 100%/1.4 Georgia,serif;
 }
 a {
-	text-decoration: none;
+    text-decoration: none;
+}
+a:focus {
+  border: none;
+  outline: none;
 }
 ul {
-	list-style:none;
+    list-style:none;
 }
 nav ul li {
-	float: left;
-	padding-right: 10px;
+    float: left;
+    padding-right: 10px;
 }
 
 div ul li {
     border-bottom: 2px dotted #bbbbbb;
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 .c {
-	float: right;
-	margin: 0;
-	margin-right: 10px;
-	font-size: .8rem;
+    float: right;
+    margin: 0;
+    margin-right: 10px;
+    font-size: .8rem;
 }
 .current {
-	background: lightblue;
-	color: white;
+    background: lightblue;
+    color: white;
 }
 .nav {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 .nav-top {
-	margin-bottom: 5px;
-	font-size: 1.1rem;
-	 clear: both;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    clear: both;
     overflow:hidden;
 }
 .nav-bottom{
-	margin-top: 5px;
-	font-size: .8rem;
+    margin-top: 5px;
+    font-size: .8rem;
 } 
 .clearfix {
     clear: both;
@@ -51,6 +55,12 @@ div ul li {
 }
 .site-footer {
     margin-top: 30px;
-	margin-bottom: 50px;
+    margin-bottom: 50px;
     border-top: 2px solid #999;
+}
+.tube {
+    color: gray;
+    background: lightblue; 
+    padding: 10px;
+    border-radius: 15px;
 }
