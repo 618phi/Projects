@@ -2,24 +2,20 @@
 layout: default
 ---
 
-<h1>
-    Home
-</h1>
-
-<p>
-    Welcome to the home of 618-Projects. Here you can browse all the projects created and highlighted by YouTube user
-    <a href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' target='blank' style="color:green">   
+<h4 style="margin-left: 30px; color: seashell">
+    Welcome to the home of 618-Projects. Here you can browse the projects created and highlighted by YouTube user
+    <a href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' target='blank' style="color: white; text-shadow:5px 5px 5px red;">   
         Dandy Williams 
     </a>.
-</p>
+</h4>
 
 <h2>
     Top Projects
 </h2>
 
 <ol>
-    {% for p in site.data.plist limit:2%}
-    <li>
+    {% for p in site.data.plist limit:2 %}
+    <li class="white">
         <a href="{{site.baseurl}}/Projects//{{p.folder}}">
             <img src="{{ site.baseurl }}/images/{{ p.image }}" alt='({{p.type}}Project)'>
             {{p.title}}
@@ -34,8 +30,8 @@ layout: default
 </h2>
 
 <ul>
-    {% for j in site.posts limit: 2%}
-    <li>
+    {% for j in site.posts limit:2 %}
+    <li class="white">
         <a href="{{site.baseurl}}{{j.url}}">
             <img src="{{ site.baseurl }}/images/{{ j.image }}" alt='({{j.category}}Project)'>
             {{j.title}}

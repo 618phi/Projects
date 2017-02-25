@@ -5,6 +5,6 @@ meta: Application for working with MySQL databases.
 image: java.png
 type: java
 ---
-<h1 style='color: pink'>
+<h1 style='color: gray'>
 HELLO WORLD
 </h1>

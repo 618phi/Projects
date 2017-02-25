@@ -10,7 +10,7 @@ layout: project
     <ul>
         {% for p in site.data.plist %}
         {% if p.type == 'java' %}
-        <li>
+        <li class="white">
             <a href="{{site.baseurl}}/Projects//{{p.folder}}">
                 <img src="{{ site.baseurl }}/images/{{ p.image }}" alt='({{p.type}}Project)'>
                 {{p.title}}

@@ -1,7 +1,11 @@
-html {
+body {
+    font: normal 100%/1.4 Georgia,serif;
+    background: silver;
     margin: 0;
     padding: 0;
-    font: normal 100%/1.4 Georgia,serif;
+    margin-top:-20px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 a {
     text-decoration: none;
@@ -15,43 +19,44 @@ ul {
 }
 nav ul li {
     float: left;
-    padding-right: 10px;
+    padding-right: 15px;
 }
-
-div ul li {
-    border-bottom: 2px dotted #bbbbbb;
-    margin-bottom: 5px;
+nav ul li a{
+    color: white;
 }
 .c {
     float: right;
     margin: 0;
-    margin-right: 10px;
+    margin-right: 35px;
     font-size: .8rem;
+    padding-top: 5px;
 }
 .current {
-    background: lightblue;
-    color: white;
-}
-.nav {
-    margin: 0;
-    padding: 0;
+    color: black;
 }
 .nav-top {
-    margin-bottom: 5px;
-    font-size: 1.1rem;
+    padding-left: 22%;
+    font-size: 1.5rem;
+    text-shadow:9px 9px 9px red;;
     clear: both;
     overflow:hidden;
 }
 .nav-bottom{
-    margin-top: 5px;
-    font-size: .8rem;
+    margin-top: 10px;
 } 
 .clearfix {
     clear: both;
     overflow:hidden;
 }
 .site-header {
+    margin: 0;
+    padding: 0;
+    margin-left: -15px;
+    margin-right: -15px;
     border-bottom: 2px solid #999;
+    background: silver url("../images/header.png") no-repeat center top;
+    background-size: cover;
+    height: 17%;
 }
 .site-footer {
     margin-top: 30px;
@@ -60,7 +65,15 @@ div ul li {
 }
 .tube {
     color: gray;
-    background: lightblue; 
+    background: white; 
     padding: 10px;
     border-radius: 15px;
+}
+.white {
+    background: white;
+    width: 40%;
+    border-radius: 75px;
+    padding-left: 55px;
+    padding-top: 5px;
+    margin-top: 5px;
 }
