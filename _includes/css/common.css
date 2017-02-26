@@ -1,0 +1,26 @@
+body {
+    font: normal 100%/1.4 Georgia,serif;
+    background: silver;
+    margin: 0;
+    padding: 0;
+    margin-top:-20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.clearfix {
+    clear: both;
+    overflow:hidden;
+}
+a {
+    text-decoration: none;
+}
+a:focus {
+  border: none;
+  outline: none;
+}
+.tube {
+    color: gray;
+    background: white; 
+    padding: 10px;
+    border-radius: 15px;
+}
