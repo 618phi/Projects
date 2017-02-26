@@ -10,15 +10,16 @@ title: All Projects
 <div>
     <ul>
         {% for p in site.data.plist %}
-        <li class="white">
+        <li>
             <a href="{{site.baseurl}}/Projects//{{p.folder}}">
                 <img src="{{ site.baseurl }}/images/{{ p.image }}" alt='({{p.type}}Project)'>
                 {{p.title}}
             </a>
-            <a href="{{p.source}}" target='blank' style='color: green; padding-left: 10px;'>
-                Video Link
-            </a>
-            {{p.content | markdownify}}
+            <p class="bb">
+            {{p.content}}
+            <br>
+            <span style="color: brown"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </span> 
+        </p>
         </li>
         {% endfor %}
     </ul>

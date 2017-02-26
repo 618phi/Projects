@@ -10,14 +10,16 @@ title: Java Posts
 <div>
     <ul>
         {% for j in site.categories.java %}
-        <li class="white">
+        <li>
             <a href="{{site.baseurl}}{{j.url}}">
                 <img src="{{ site.baseurl }}/images/{{ j.image }}" alt='({{j.category}}Project)'>
                 {{j.title}}
             </a>
-            <p>
-                {{j.meta}}
-            </p>
+            <p class="bb">
+            {{j.meta}}
+            <br>
+            <span style="color: brown"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </span> 
+        </p>
         </li>
         {% endfor %}
     </ul>

@@ -8,12 +8,18 @@ nav ul li {
 nav ul li a{
     color: white;
 }
+li a img {
+    border-radius: 75px;
+}
+.bb {
+    color: tan;
+    margin-left: 50px;
+}
 .nav-top {
-    padding-left: 22%;
+    margin-top: -25px;
+    margin-left: 20%;
     font-size: 1.5rem;
     text-shadow:9px 9px 9px red;;
-  //  clear: both;
-  //  overflow: hidden;
 }
 .nav-bottom{
     margin-top: 10px;
@@ -21,11 +27,4 @@ nav ul li a{
 .current {
     color: black;
 }
-.white {
-    background: white;
-    width: 300px;
-    border-radius: 75px;
-    padding-left: 55px;
-    padding-top: 5px;
-    margin-top: 5px;
-}
+

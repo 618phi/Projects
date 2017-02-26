@@ -10,14 +10,16 @@ title: Math Posts
 <div>
     <ul>
         {% for m in site.categories.math %}
-        <li class="white">
+        <li>
             <a href="{{site.baseurl}}{{m.url}}">
                 <img src="{{ site.baseurl }}/images/{{ m.image }}" alt='({{m.category}}Project)'>
                 {{m.title}}
             </a>
-            <p>
-                {{m.meta}}
-            </p>
+            <p class="bb">
+            {{m.meta}}
+            <br>
+            <span style="color: brown"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </span> 
+        </p>
         </li>
         {% endfor %}
     </ul>

@@ -8,14 +8,16 @@ title: All Posts
 <div>
     <ul>
         {% for x in site.posts %}
-        <li class="white">
+        <li>
             <a href="{{site.baseurl}}{{x.url}}">
                 <img src="{{ site.baseurl }}/images/{{ x.image }}" alt='({{x.category}}Project)'>
                 {{x.title}}
             </a>
-            <p>
-                {{x.meta}}
-            </p>
+            <p class="bb">
+            {{x.meta}}
+            <br>
+            <span style="color: brown"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </span> 
+        </p>
         </li>
         {% endfor %}
     </ul>

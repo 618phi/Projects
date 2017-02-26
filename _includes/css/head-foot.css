@@ -1,18 +1,18 @@
 .site-header {
     margin: 0;
     padding: 0;
-   // margin-left: -15px;
-   // margin-right: -15px;
-    border: 2px dotted indianred;
-  //  border-bottom: 2px dotted indianred;
+    margin-top: -20px;
+    margin-left: -15px;
+    margin-right: -15px;
     background: tan url("../images/header.png") no-repeat center top;
     background-size: cover;
+    border-bottom: 1px dotted tan;
     height: 100px;
 }
 .site-footer {
     margin-top: 30px;
     margin-bottom: 50px;
-    border-top: 2px solid #999;
+    border-top: 2px dotted brown;
 }
 .c {
     float: right;

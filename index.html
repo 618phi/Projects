@@ -1,11 +1,12 @@
 ---
 layout: default
+main-title: Home
 ---
 
-<h4 style="margin-left: 30px; color: seashell">
+<h4 style="margin-left: 30px; color: tan">
     <span style="font-size: 30px;">W</span>elcome to the home of 618-Projects. 
-    <br>Projects highlighted by YouTube user
-    <a href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' target='blank' style="color: white; text-shadow:5px 5px 5px red;">   
+    <br>Projects highlighted by YouTuber
+    <a href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' target='blank' style="color: lavender; text-shadow:5px 5px 5px red;">   
         Dandy Williams 
     </a>.
 </h4>
@@ -16,13 +17,18 @@ layout: default
 
 <ol>
     {% for p in site.data.plist limit:2 %}
-    <li class="white">
-        <a href="{{site.baseurl}}/Projects//{{p.folder}}">
+    <li>
+        <a href="{{site.baseurl}}/Projects//{{p.folder}}" >
             <img src="{{ site.baseurl }}/images/{{ p.image }}" alt='({{p.type}}Project)'>
             {{p.title}}
         </a>
-        {{p.content | markdownify}}
+        <p class="bb">
+            {{p.content}}
+            <br>
+            <span style="color: brown"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </span> 
+        </p>
     </li>
+    <div></div>
     {% endfor %}
 </ol>
 
@@ -32,13 +38,15 @@ layout: default
 
 <ul>
     {% for j in site.posts limit:2 %}
-    <li class="white">
+    <li>
         <a href="{{site.baseurl}}{{j.url}}">
             <img src="{{ site.baseurl }}/images/{{ j.image }}" alt='({{j.category}}Project)'>
             {{j.title}}
         </a>
-        <p>
+        <p class="bb">
             {{j.meta}}
+            <br>
+            <span style="color: brown"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </span> 
         </p>
     </li>
     {% endfor %}
