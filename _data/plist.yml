@@ -1,26 +1,26 @@
 - title: 618-MySQL
-  folder: JavaProjects/sql.html
+  folder: JavaProjects/sql/
   type: java
   source: 'https://youtu.be/8J1fYrvH1H4'
   image: 'java.png'
   content: 'The project matter for 618-MySQL.'
   
 - title: 618-MathSite
-  folder: MathProjects/msite.html
+  folder: MathProjects/msite/
   type: math 
   source: 'https://youtu.be/8J1fYrvH1H4'
   image: 'math.png'
   content: 'The project matter for 618-MathSite.'
   
 - title: 618-Tinnitus
-  folder: JavaProjects/tin.html
+  folder: JavaProjects/tin/
   type: java
   source: 'https://youtu.be/8J1fYrvH1H4'
   image: 'java.png'
   content: 'The project matter for 618-Tinnitus.'
   
 - title: 618-MathCalc
-  folder: MathProjects/calc.html
+  folder: MathProjects/calc/
   type: math
   source: 'https://youtu.be/8J1fYrvH1H4'
   image: 'math.png'
