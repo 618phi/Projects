@@ -5,20 +5,22 @@ layout: default
 <nav class='nav clearfix'>
     <ul>
         <li>
-            <a href="{{site.baseurl}}/posts-page.html" {% if page.url contains 'posts-page' %}class="current"{% endif %} '>
+            <a href="{{site.baseurl}}/posts-page.html" {% if page.url contains 'posts-page' %}class="current"{% endif %}>
                All Posts </a>
         </li>
         <li>
-            <a href="{{site.baseurl}}/java-news.html" {% if page.url contains 'java' %}class="current"{% endif %}'>
+            <a href="{{site.baseurl}}/java-news.html" {% if page.url contains 'java' %}class="current"{% endif %}>
                Java Posts </a>
         </li>
         <li>
-            <a href="{{site.baseurl}}/math-news.html" {% if page.url contains 'math' %}class="current"{% endif %}'>
+            <a href="{{site.baseurl}}/math-news.html" {% if page.url contains 'math' %}class="current"{% endif %}>
                Math Posts </a>
         </li>
     </ul>
 </nav>
 
+
 {{content}}
+
 
 

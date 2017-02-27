@@ -6,9 +6,6 @@ body {
     margin-left: 15px;
     margin-right: 15px;
 }
-.top {
-    height: 10px;
-}
 .clearfix {
     clear: both;
     overflow:hidden;
@@ -27,4 +24,8 @@ a:focus {
     background: red; 
     padding: 10px;
     border-radius: 10px;
+}
+.article {
+    color:tan; 
+    margin-left: 40px;
 }

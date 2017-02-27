@@ -5,7 +5,6 @@ meta: Application for relieving tinnitus.
 image: java.png
 type: java
 ---
-<h1 style='color: gray'>
-HELLO WORLD
-</h1>
+
+{% include tin.html %}
 

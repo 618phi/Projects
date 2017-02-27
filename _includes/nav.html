@@ -1,21 +1,18 @@
 <nav class='{{include.navclass}}'>
     <ul>
-		<li>
-			<a href="{{site.baseurl}}/" {% if page.url == '/' or  page.url == '/index.html' %}class="current"{% endif %}>
-				Home
-			</a>
-		</li>
-		<li>
-			<a href="{{site.baseurl}}/posts-page.html" 
-			{% if page.url contains 'posts-page' or page.url contains 'java' or page.url contains 'math' %} class="current"{% endif %}>
-				Posts
-			</a>
-		</li>
-		<li>
-			<a href="{{site.baseurl}}/Projects/start.html" {% if page.url contains 'Projects' %}class="current"{% endif %}>
-				Projects
-			</a>
-		</li>
-	</ul>	
+        <li>
+            <a href="{{site.baseurl}}/" {% if page.url == '/' or  page.url == '/index.html' %}class="current"{% endif %}>
+               Home</a>
+        </li>
+        <li>
+            <a href="{{site.baseurl}}/posts-page.html" 
+               {% if page.url contains 'posts-page' or page.url contains 'java' or page.url contains 'math' %} class="current"{% endif %}>
+               Posts</a>
+        </li>
+        <li>
+            <a href="{{site.baseurl}}/Projects/start.html" {% if page.url contains 'Projects' %}class="current"{% endif %}>
+               Projects</a>
+        </li>
+    </ul>	
 </nav>
 

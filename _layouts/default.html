@@ -1,8 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-GB">
     <head>
         <meta charset="utf-8">
         <title>{% if page.title %}{{ page.title }}_{% endif %}618-Projects{% if page.main-title %}_{{ page.main-title }}{% endif %}</title>
         <link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
+        <meta name="description" content="{{ page.meta }}">
     </head>
 
     <body>
@@ -12,7 +14,7 @@
                     618-Projects
                 </h2>
                 <div style="margin-right: 20px; margin-top: 30px; float: right" class="tube">
-                    <a href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' target='blank' class='tube'">   
+                    <a href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' target='blank' class='tube'>   
                         618-Tube
                     </a>
                 </div>
@@ -27,7 +29,7 @@
         <footer class='site-footer'>
             {% include nav.html navclass='nav-bottom' %}
             <span class='c'>
-                &copy 618-Projects 2017
+                &#169; 618-Projects 2017
             </span>
         </footer>
     </body>
