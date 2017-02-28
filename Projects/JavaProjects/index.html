@@ -17,7 +17,7 @@ meta: page showing all java projects
                 <img src="{{ site.baseurl }}/images/{{ p.image }}" alt='({{p.type}}Project)'>
                 {{p.title}}</a>
             <p class="bb">{{p.content}}</p>
-            {% unless forloop.last %}
+            {% unless p.order == 'last' %}
             <p style="color: brown;"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </p>
             {% endunless %}
         </li>
