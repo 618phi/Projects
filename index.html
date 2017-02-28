@@ -22,15 +22,12 @@ priority: 1.0
     <li>
         <a href="{{site.baseurl}}/Projects//{{p.folder}}" >
             <img src="{{ site.baseurl }}/images/{{ p.image }}" alt='({{p.type}}Project)'>
-            {{p.title}}
-        </a>
-        <p class="bb">
-            {{p.content}}
-            <br>
-            <span style="color: brown"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </span> 
-        </p>
+            {{p.title}}</a>
+        <p class="bb">{{p.content}}</p>        
+        {% unless forloop.last %}
+        <p style="color: brown;"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </p>
+        {% endunless %}
     </li>
-    <div></div>
     {% endfor %}
 </ol>
 
@@ -45,11 +42,10 @@ priority: 1.0
             <img src="{{ site.baseurl }}/images/{{ j.image }}" alt='({{j.category}}Project)'>
             {{j.title}}
         </a>
-        <p class="bb">
-            {{j.meta}}
-            <br>
-            <span style="color: brown"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </span> 
-        </p>
+        <p class="bb">{{j.meta}}</p>
+        {% unless forloop.last %}
+        <p style="color: brown;"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </p>
+        {% endunless %}       
     </li>
     {% endfor %}
 </ul>

@@ -16,11 +16,10 @@ meta: page showing all math posts
                 <img src="{{ site.baseurl }}/images/{{ m.image }}" alt='({{m.category}}Project)'>
                 {{m.title}}
             </a>
-            <p class="bb">
-            {{m.meta}}
-            <br>
-            <span style="color: brown"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </span> 
-        </p>
+            <p class="bb">{{m.meta}}</p>
+            {% unless forloop.last %}
+            <p style="color: brown;"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </p>
+            {% endunless %}
         </li>
         {% endfor %}
     </ul>

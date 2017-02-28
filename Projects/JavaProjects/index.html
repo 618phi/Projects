@@ -15,13 +15,11 @@ meta: page showing all java projects
         <li>
             <a href="{{site.baseurl}}/Projects//{{p.folder}}">
                 <img src="{{ site.baseurl }}/images/{{ p.image }}" alt='({{p.type}}Project)'>
-                {{p.title}}
-            </a>
-            <p class="bb">
-            {{p.content}}
-            <br>
-            <span style="color: brown"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </span> 
-        </p>
+                {{p.title}}</a>
+            <p class="bb">{{p.content}}</p>
+            {% unless forloop.last %}
+            <p style="color: brown;"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </p>
+            {% endunless %}
         </li>
         {% endif %}
         {% endfor %}
