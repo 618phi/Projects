@@ -5,7 +5,8 @@ meta: the home page for 618-Projects
 priority: 1.0
 ---
 
-<h4 style="margin-left: 30px; color: tan">
+
+<h4 style="margin-left: 30px; color: tan">   
     <span style="font-size: 30px;">W</span>elcome to the home of 618-Projects. 
     <br>Projects highlighted by YouTuber
     <a href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' target='blank' style="color: lavender; text-shadow:5px 5px 5px red;">   
@@ -17,7 +18,7 @@ priority: 1.0
     Top Projects
 </h2>
 
-<ol>
+<ul>
     {% for p in site.data.plist limit:2 %}
     <li>
         <a href="{{site.baseurl}}/Projects//{{p.folder}}" >
@@ -29,7 +30,7 @@ priority: 1.0
         {% endunless %}
     </li>
     {% endfor %}
-</ol>
+</ul>
 
 <h2>
     Latest Posts
@@ -49,3 +50,4 @@ priority: 1.0
     </li>
     {% endfor %}
 </ul>
+

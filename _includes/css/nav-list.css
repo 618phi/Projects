@@ -1,10 +1,7 @@
 ul {
     list-style:none;
 }
-nav ul li {
-    float: left;
-    padding-right: 15px;
-}
+div ul li a,
 nav ul li a{
     color: white;
 }
@@ -16,15 +13,22 @@ li a img {
     margin-left: 50px;
 }
 .nav-top {
-    margin-top: -25px;
-    margin-left: 20%;
+    margin-top: -40px;;
+    margin-left: 20px;
     font-size: 1.5rem;
-    text-shadow:9px 9px 9px red;;
+    text-shadow:9px 9px 9px red;
+    clear: both;
+    overflow:hidden;
 }
 .nav-bottom{
     margin-top: 10px;
 } 
 .current {
     color: black;
+}
+.fl ul li,
+.nav-bottom ul li {
+    float: left;
+    padding-right: 15px;
 }
 

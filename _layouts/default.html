@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-GB" style="height: 100%">
     <head>
         <meta charset="utf-8">
         <title>{% if page.title %}{{ page.title }}_{% endif %}618-Projects{% if page.main-title %}_{{ page.main-title }}{% endif %}</title>
@@ -7,24 +7,28 @@
         <meta name="description" content="{{ page.meta }}">
     </head>
 
-    <body>
+    <body style="height: 100%">
         <header class='site-header'>
             <div class="clearfix">
-                <h2 style="margin-left: 20px; float: left">
+                <h1 style="margin-left: 20px; float: left">
                     618-Projects
-                </h2>
-                <div style="margin-right: 20px; margin-top: 30px; float: right" class="tube">
-                    <a href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' target='blank' class='tube'>   
+                </h1>
+                <div style="margin-right: 20px; margin-top: 30px; float: right">
+                    <a href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' target='blank' class="tube">   
                         618-Tube
                     </a>
                 </div>
             </div>
-            <div class="clearfix">
                 {% include nav.html navclass='nav-top' %}
-            </div>
         </header>
 
-        {{content}}
+        <div style="border-left: 1px solid tan; margin-left: 18.1%; border-right: 1px solid tan; margin-right: 18.1%;">
+            <div style="padding-left: 20%; padding-right: 20%;">
+                {{content}}
+            </div>
+        </div>
+
+
 
         <footer class='site-footer'>
             {% include nav.html navclass='nav-bottom' %}

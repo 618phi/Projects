@@ -14,11 +14,10 @@ a {
     text-decoration: none;
 }
 a:focus {
-  border: none;
-  outline: none;
+    border: none;
+    outline: none;
 }
 .tube {
-    margin-bottom: -10px;
     font-weight: bold;
     color: white;
     background: red; 
