@@ -4,7 +4,7 @@
     margin-bottom: 15px;
     background: tan url("../images/header2.png") no-repeat center bottom;
     background-size: cover;
-    border-bottom: 1px dotted tan;
+    border-bottom: 1px solid tan;
     height: 36.1%;
 }
 .site-footer {
