@@ -1,16 +1,36 @@
 ---
-layout: project
+layout: default
 ---
-<div class="clearfix">
-    <h1 style="float: left">
+
+<nav class='clearfix fl line' style="margin-bottom: 30px;">
+    <ul style="padding: 0;">
+        <li class="list">
+            <a href="{{site.baseurl}}/Projects/start/" {% if page.url contains 'Projects/start' %}
+               class="current"{% endif %}>
+               All Projects</a>
+        </li>
+        <li class="list">
+            <a href="{{site.baseurl}}/Projects/JavaProjects/" {% if page.url contains 'JavaProjects/' %} 
+               class="current" {% endif %}>
+               Java Projects</a>
+        </li>
+        <li class="list" style="margin-right: 0;">
+            <a href="{{site.baseurl}}/Projects/MathProjects/" {% if page.url contains 'MathProjects' %}
+               class="current"{% endif %}>
+               Math Project</a>
+        </li>
+    </ul>
+    <div class="clearfix" style='padding-left: 30%;'>
+    <h2 style="float: left">
         {{page.title}}
-    </h1>
+    </h2>
     <span style="float: left; margin-top: 30px; margin-left: 20px;">
         <a href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' target='blank' class='tube'>   
             618-Tube
         </a>
     </span>
 </div>
+</nav>
 
 {{content}}
 

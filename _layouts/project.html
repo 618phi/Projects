@@ -2,27 +2,27 @@
 layout: default
 ---
 
-<nav class='clearfix fl'>
-	<ul>
-		<li>
-			<a href="{{site.baseurl}}/Projects/start/" {% if page.url contains 'Projects/start' %}
-			class="current"{% endif %}>
-				All Projects
-			</a>
-		</li>
-		<li>
-			<a href="{{site.baseurl}}/Projects/JavaProjects/" {% if page.url contains 'JavaProjects/' %} 
-			class="current" {% endif %}>
-				Java Projects
-			</a>
-		</li>
-		<li>
-			<a href="{{site.baseurl}}/Projects/MathProjects/" {% if page.url contains 'MathProjects' %}
-			class="current"{% endif %}>
-				Math Projects
-			</a>
-		</li>
-	</ul>	
+<nav class='clearfix fl line'>
+    <ul style="padding: 0;">
+        <li class="list">
+            <a href="{{site.baseurl}}/Projects/start/" {% if page.url contains 'Projects/start' %}
+               class="current"{% endif %}>
+               All Projects</a>
+        </li>
+        <li class="list">
+            <a href="{{site.baseurl}}/Projects/JavaProjects/" {% if page.url contains 'JavaProjects/' %} 
+               class="current" {% endif %}>
+               Java Projects</a>
+        </li>
+        <li class="list" style="margin-right: 0;">
+            <a href="{{site.baseurl}}/Projects/MathProjects/" {% if page.url contains 'MathProjects' %}
+               class="current"{% endif %}>
+               Math Project</a>
+        </li>
+    </ul>
+    <h2 class="clearfix" style="margin-top: 40px; text-align: center;">
+        {{ page.headline }}
+    </h2>
 </nav>
 
 {{content}}

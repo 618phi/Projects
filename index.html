@@ -5,16 +5,27 @@ meta: the home page for 618-Projects
 priority: 1.0
 ---
 
+<div class='line clearfix fl'>
+    <ul style="padding:0;">
+        <li class="list">
+            <a href="{{site.baseurl}}/projects/start/" {% if page.url contains 'java' %}class="current"{% endif %}>
+               All Projects </a>
+        </li>
+        <li class="list" style="margin-right: 0;">
+            <a href="{{site.baseurl}}/posts-page/" {% if page.url contains 'math' %}class="current"{% endif %}>
+               All Posts </a>
+        </li>
+    </ul>
+    <h4 class='clearfix' style="text-align: center; padding-top: 20px;">   
+        <span style="font-size: 30px;">W</span>elcome to the home of 618-Projects. 
+        <br> Presented and created via YouTuber
+        <a href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' target='blank' style="color: lavender; text-shadow:5px 5px 5px red;">   
+            Dandy Williams 
+        </a>.
+    </h4>
+</div>
 
-<h4 style="margin-left: 30px; color: tan">   
-    <span style="font-size: 30px;">W</span>elcome to the home of 618-Projects. 
-    <br>Projects highlighted by YouTuber
-    <a href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' target='blank' style="color: lavender; text-shadow:5px 5px 5px red;">   
-        Dandy Williams 
-    </a>.
-</h4>
-
-<h2>
+<h2 style="color: tan">
     Top Projects
 </h2>
 
@@ -32,7 +43,7 @@ priority: 1.0
     {% endfor %}
 </ul>
 
-<h2>
+<h2 style="color: tan">
     Latest Posts
 </h2>
 

@@ -28,3 +28,12 @@ a:focus {
     color:tan; 
     margin-left: 40px;
 }
+.line {
+    color: tan;
+    border-top: 1px solid tan; 
+    border-bottom: 1px solid tan;
+    padding-left: -20%; 
+    padding-right: -20%; 
+    margin-right: -18.1%;  
+    margin-left: -18.1%;
+}

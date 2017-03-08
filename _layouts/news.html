@@ -2,22 +2,27 @@
 layout: default
 ---
 
-<div class='clearfix fl'>
-    <ul>
-        <li>
+
+<div class='line clearfix fl'>
+    <ul style="padding:0;">
+        <li class="list">
             <a href="{{site.baseurl}}/posts-page/" {% if page.url contains 'posts-page' %}class="current"{% endif %}>
                All Posts </a>
         </li>
-        <li>
+        <li class="list">
             <a href="{{site.baseurl}}/java-news/" {% if page.url contains 'java' %}class="current"{% endif %}>
                Java Posts </a>
         </li>
-        <li>
+        <li class="list" style="margin-right: 0;">
             <a href="{{site.baseurl}}/math-news/" {% if page.url contains 'math' %}class="current"{% endif %}>
                Math Posts </a>
         </li>
     </ul>
+    <h2 class="clearfix" style="margin-top: 40px; text-align: center;">
+        {{ page.headline }}
+    </h2>
 </div>
+
 
 
 {{content}}
