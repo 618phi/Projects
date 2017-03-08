@@ -15,6 +15,7 @@ changefreq: weekly
                 <img src="{{ site.baseurl }}/images/{{ x.image }}" alt='({{x.category}}Project)'>
                 {{x.title}}
             </a>
+            <br>Post Date : {{x.date | date: "%-d %B %Y"}}
             <p class="bb">{{x.meta}}</p>
             {% unless forloop.last %}
             <p style="color: brown;"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </p>
