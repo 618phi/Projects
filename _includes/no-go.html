@@ -1,7 +1,14 @@
 <div style = "color: tan">
+    {% if page.stage %}
+    <h2 style="margin-left: 50px;">
+        Project Concept
+    </h2>
+    Project awaiting construction. Keep checking posts for further developments.
+    {% else %}
     <h2 style="margin-left: 50px;">
         Project in Pipeline
     </h2>
     Project is in the process of being constructed. Keep checking posts for further developments.
+    {% endif %}
 </div>
-   
+

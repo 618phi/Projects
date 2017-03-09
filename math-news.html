@@ -13,6 +13,7 @@ headline: Math Project Posts
                 <img src="{{ site.baseurl }}/images/{{ m.image }}" alt='({{m.category}}Project)'>
                 {{m.title}}
             </a>
+            <br>Post Date : {{m.date | date: "%-d %B %Y"}}
             <p class="bb">{{m.meta}}</p>
             {% unless forloop.last %}
             <p style="color: brown;"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </p>

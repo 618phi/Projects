@@ -13,6 +13,7 @@ headline: Java Project Posts
                 <img src="{{ site.baseurl }}/images/{{ j.image }}" alt='({{j.category}}Project)'>
                 {{j.title}}
             </a>
+            <br>Post Date : {{j.date | date: "%-d %B %Y"}}
             <p class="bb">{{j.meta}}</p>
             {% unless forloop.last %}
             <p style="color: brown;"> -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- </p>

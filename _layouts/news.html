@@ -19,13 +19,15 @@ layout: default
         </li>
     </ul>
     <h2 class="clearfix" style="margin-top: 40px; text-align: center;">
-        {{ page.headline }}
+        {% if page.headline %} {{ page.headline }}
+        {% else  %} {% include article.html %}
+        {% endif %}
     </h2>
 </div>
 
 
-
-{{content}}
-
+<div style="color: tan">
+    {{content}}
+</div>
 
 
