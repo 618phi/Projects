@@ -1,6 +1,6 @@
 body {
     font: normal 100%/1.4 Georgia,serif;
-    background: background ;
+    background: midnightblue;
     margin: 0;
     padding: 0;
     margin-left: 15px;
@@ -24,14 +24,33 @@ a:focus {
     padding: 10px;
     border-radius: 10px;
 }
+.donate {
+    font-weight: bold;
+    color: white;
+    background: skyblue; 
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+.download {
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    background: slateblue; 
+    padding: 10px;
+    padding-left: 30%;
+    padding-right: 30%;
+    border-radius: 15px;
+}
 .article {
     color:tan; 
     margin-left: 40px;
 }
 .line {
     color: tan;
-    border-top: 1px solid tan; 
-    border-bottom: 1px solid tan;
+    border-top: 1px solid lightskyblue; 
+    border-bottom: 1px solid lightskyblue;
     padding-left: -20%; 
     padding-right: -20%; 
     margin-right: -18.1%;  
