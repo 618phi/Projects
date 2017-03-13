@@ -27,7 +27,7 @@ a:focus {
 .donate {
     font-weight: bold;
     color: white;
-    background: skyblue; 
+    background: lightseagreen; 
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -55,4 +55,9 @@ a:focus {
     padding-right: -20%; 
     margin-right: -18.1%;  
     margin-left: -18.1%;
+}
+.bottom_aligner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
