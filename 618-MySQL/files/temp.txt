@@ -1,8 +1,0 @@
-CREATE TABLE
-newTable
-(  
-ID INT(5) NOT NULL AUTO_INCREMENT,
-columnName INT(5) NOT NULL ,
-columnName INT(5) NOT NULL ,
-PRIMARY KEY (ID)
-);
