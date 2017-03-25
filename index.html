@@ -62,3 +62,15 @@ priority: 1.0
     {% endfor %}
 </ul>
 
+<?php
+    $counts = ("counter");
+    $hits = file($counts);
+    $hits[0] ++;
+    $fp = fopen($counts, "w");
+    fputs($fp , "$hits[0]");
+    fclose($fp);
+    header("Content-type: text/javascript");
+    echo "Hits('" . $hits[0] . "');";
+?>
+
+<script type="text/javascript" src="hits.php"></script>
