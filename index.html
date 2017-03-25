@@ -63,7 +63,7 @@ priority: 1.0
 </ul>
 
 <?php
-    $counts = ("counter");
+    $counts = ("counter.txt");
     $hits = file($counts);
     $hits[0] ++;
     $fp = fopen($counts, "w");
