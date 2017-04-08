@@ -1,0 +1,5 @@
+CREATE TABLE
+database2.table2
+like
+database1.table1
+;
