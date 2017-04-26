@@ -1,17 +1,17 @@
-- title: 618-DB
-  folder: JavaProjects/sql/
-  type: java
-  source: 'https://youtu.be/8J1fYrvH1H4'
-  image: 'java.png'
-  content: 'MySQL Database management application for Windows.'
-  
-  - title: 618-Tinnitus
+- title: 618-Tinnitus
   folder: JavaProjects/tin/
   type: java
   source: 'https://youtu.be/8J1fYrvH1H4'
   image: 'java.png'
   content: 'Tinnitus relief application.'
   order: last
+
+- title: 618-DB
+  folder: JavaProjects/sql/
+  type: java
+  source: 'https://youtu.be/8J1fYrvH1H4'
+  image: 'java.png'
+  content: 'MySQL Database management application for Windows.'
   
 - title: 618-MathSite
   folder: MathProjects/msite/
