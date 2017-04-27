@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 618-Calc
-meta: Application for math problems.
+meta: Application for trigonometry problems.
 image: math.png
 type: java
 ---

@@ -20,7 +20,7 @@
   image: 'math.png'
   content: 'GCSE maths website.'
   
-- title: 618-MathCalc
+- title: 618-Calc
   folder: MathProjects/calc/
   type: math
   source: 'https://youtu.be/8J1fYrvH1H4'
