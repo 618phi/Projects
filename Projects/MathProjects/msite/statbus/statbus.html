@@ -1,0 +1,460 @@
+<!DOCTYPE html> 
+<HTML> 
+<HEAD>
+   <TITLE>StatBus </TITLE>
+   <META CHARSET="utf-8">
+   <META CONTENT="width=device-width, initial-scale=1" NAME="viewport">
+
+<!-- Include jQuery Mobile stylesheets -->
+   <LINK HREF="jqm.min.css" REL="stylesheet">
+
+<!-- Include the jQuery library -->
+   <SCRIPT SRC="jqm.min.js"></SCRIPT> 
+
+<!-- Include the jQuery Mobile library -->
+   <SCRIPT SRC="jqm2.min.js"></SCRIPT> 
+   <STYLE TYPE="text/css">
+
+#page2, #page1, #page21 {
+background: black;
+}
+
+#bg {
+background: silver;  padding: 1% 5%; margin: 6% 2% 2% 2%; border-radius:10%;
+}
+
+p {
+    text-align:center;
+  }
+
+  #a   {
+text-align:center; text-shadow: 3px 3px 3px purple;
+}
+   </STYLE> 
+</HEAD>
+<BODY>
+<DIV DATA-ROLE="page" ID="page1"> 
+   <DIV ID="bg"> 
+      <DIV DATA-ROLE="header"> 
+
+         <P ID="a" STYLE="font:bold 25px arial;">StatBus 
+         <BR> Getting On The StatBus </P>
+      </DIV>
+      <DIV CLASS="ui-content" DATA-ROLE="main"> 
+
+         <P><A CLASS="ui-btn ui-btn-inline ui-corner-all" HREF="#panel1">
+         Click here first to select seat combination </A> </P>
+         <DIV DATA-DISPLAY="overlay" DATA-ROLE="panel" ID="panel1"> 
+            <FIELDSET DATA-ROLE="controlgroup"> <LEGEND> Correct seat
+               combination = 1 </LEGEND> <LABEL FOR="red"> Red seats = 32% 
+               </LABEL> 
+               <INPUT ID="red" NAME="pierce" TYPE="checkbox" VALUE="red"> 
+               <LABEL FOR="green"> Green seats = 1/5 
+               <INPUT ID="green" NAME="pierce" TYPE="checkbox" VALUE="green">
+               </LABEL> <LABEL FOR="red11"> Red seats = 72% 
+               <INPUT ID="red11" NAME="pierce" TYPE="checkbox" VALUE="red11"> 
+               </LABEL> <LABEL FOR="blue"> Blue seats = 0.46 </LABEL> 
+               <INPUT ID="blue" NAME="pierce" TYPE="checkbox" VALUE="blue"> 
+               <LABEL FOR="black"> Black seats = 44% </LABEL> 
+               <INPUT ID="black" NAME="pierce" TYPE="checkbox" VALUE="black">
+               <LABEL FOR="white"> White seats = 1/3 </LABEL> 
+               <INPUT ID="white" NAME="pierce" TYPE="checkbox" VALUE="white">
+               <LABEL FOR="pink"> Pink seats = 0.36 </LABEL> 
+               <INPUT ID="pink" NAME="pierce" TYPE="checkbox" VALUE="pink"> 
+            </FIELDSET>
+            <A CLASS="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left"
+               DATA-REL="close" HREF="#pageone"> Close panel </A> 
+         </DIV>
+         <FIELDSET CLASS="ui-field-contain"> <LABEL FOR="tat1"> <B> Select
+            correct statement </B> </LABEL> 
+            <SELECT DATA-NATIVE-MENU="false" ID="tat1" NAME="tat1">
+               <OPTION VALUE="no">The mode value for seat colours is green. </OPTION>
+               <OPTION VALUE="no1">The mode value for seat colours is blue. </OPTION>
+               <OPTION VALUE="y11">The mode value for seat colours is red. </OPTION>
+            </SELECT>
+         </FIELDSET>
+
+         <P>
+         <A CLASS="ui-btn ui-btn-inline ui-corner-all" HREF="#submit"
+            ONCLICK="a1()"> Submit </A> </P>
+
+         <P HIDDEN ID="d1"></P>
+      </DIV>
+      <DIV DATA-ROLE="footer"> 
+
+         <P>StatBus tickets gained by selection above 
+         <BR> Gold and silver tickets available </P>
+      </DIV>
+   </DIV>
+</DIV>
+<DIV DATA-ROLE="page" ID="page2"> 
+   <DIV ID="bg"> 
+      <DIV CLASS="ui-content" DATA-ROLE="header"> 
+
+         <P ID="a" STYLE="font:bold 25px arial;">The StatBus 
+         <BR> First Stop 
+         <BR> </P>
+      </DIV>
+      <DIV CLASS="ui-content" DATA-ROLE="main"> 
+
+         <P>
+         <A CLASS="ui-btn ui-corner-all ui-btn-inline ui-btn-b"
+            DATA-REL="popup" DATA-TRANSITION="slideup" HREF="#piercepop">
+         Mean and Median </A> </P>
+         <DIV CLASS="ui-conent" DATA-ROLE="popup" ID="piercepop"> 
+            <A CLASS="ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right ui-corner-all"
+               DATA-REL="back" HREF="#"> Close </A> 
+
+            <P>Click below for more on mean and median </P>
+         </DIV>
+         <DIV DATA-ROLE="controlgroup"> <A CLASS="ui-btn " HREF="#page33">
+            Mean and medium explained </A> <A CLASS="ui-btn" HREF="#panel">
+            Mean and medium question </A> 
+         </DIV>
+         <DIV DATA-DISPLAY="overlay" DATA-ROLE="panel" ID="panel"> 
+            <FIELDSET DATA-ROLE="controlgroup"> <LEGEND> From this data; 2,
+               5, 2, 1, 4, 6. Select the correct mean and medium values. 
+               </LEGEND> <LABEL FOR="red2"> The median = 3.5 </LABEL> 
+               <INPUT ID="red2" NAME="pierce" TYPE="checkbox" VALUE="red2"> 
+               <LABEL FOR="green2"> The mean = 2 </LABEL> 
+               <INPUT ID="green2" NAME="pierce" TYPE="checkbox"
+                      VALUE="green2"> <LABEL FOR="blue2"> The mean = 3.33 
+               </LABEL> 
+               <INPUT ID="blue2" NAME="pierce" TYPE="checkbox" VALUE="blue2">
+               <LABEL FOR="black2"> The medium = 4 </LABEL> 
+               <INPUT ID="black2" NAME="pierce" TYPE="checkbox"
+                      VALUE="black2"> <LABEL FOR="red1"> The mean = 3.5 
+               </LABEL> 
+               <INPUT ID="red1" NAME="pierce" TYPE="checkbox" VALUE="red1"> 
+               <LABEL FOR="green1"> The medium = 2 </LABEL> 
+               <INPUT ID="green1" NAME="pierce" TYPE="checkbox"
+                      VALUE="green1"> <LABEL FOR="blue1"> The mean = 3.66 
+               </LABEL> 
+               <INPUT ID="blue1" NAME="pierce" TYPE="checkbox" VALUE="blue1">
+               <LABEL FOR="black1"> The medium = 3 </LABEL> 
+               <INPUT ID="black1" NAME="pierce" TYPE="checkbox"
+                      VALUE="black1"> 
+            </FIELDSET>
+
+            <P>
+            <A CLASS="ui-btn ui-btn-inline ui-corner-all" HREF="#submit"
+               ONCLICK="a2()"> submit </A> </P>
+
+            <P HIDDEN ID="d2"></P>
+         </DIV>
+      </DIV>
+      <DIV CLASS="ui-content" DATA-ROLE="footer"> 
+
+         <P>Answer the question above to gain ticket to next StatBus stop. 
+         <BR> Incorrect selections will take you to mean and medium
+         expalained. </P>
+      </DIV>
+   </DIV>
+</DIV>
+<DIV DATA-ROLE="page" ID="page21"> 
+   <DIV ID="bg"> 
+      <DIV DATA-ROLE="header"> 
+
+         <P ID="a" STYLE="font:bold 25px arial;">The StatBus 
+         <BR> Second Stop 
+         <BR> </P>
+      </DIV>
+      <DIV CLASS="ui-content" DATA-ROLE="main"> 
+
+         <P>
+         <A CLASS="ui-btn ui-corner-all ui-btn-inline ui-btn-b"
+            DATA-REL="popup" DATA-TRANSITION="slide" HREF="#arguepop">
+         Probability </A> </P>
+         <DIV CLASS="ui-conent" DATA-ROLE="popup" ID="arguepop"> 
+            <A CLASS="ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right ui-corner-all"
+               DATA-REL="back" HREF="#"> Close </A> 
+
+            <P>Answer true or false below </P>
+         </DIV>
+         <DIV DATA-ROLE="collapsibleset"> 
+            <DIV DATA-COLLAPSED-ICON="arrow-d" DATA-EXPANDED-ICON="arrow-u"
+                 DATA-ICONPOS="right" DATA-ROLE="collapsible"> 
+               <H1>The probability for the bus arriving at the first stop
+               on time is 0.88 </H1>
+
+               <P>The probability for the bus not arriving at the first
+               stop on time is 1 - 0.88 = 0.12 </P>
+
+               <P><LABEL FOR="switch"> True or False </LABEL> 
+               <INPUT DATA-OFF-TEXT="False" DATA-ON-TEXT="True"
+                      DATA-ROLE="flipswitch" ID="sw" NAME="switch"
+                      TYPE="checkbox" /> </P>
+            </DIV>
+            <DIV DATA-COLLAPSED-ICON="arrow-d" DATA-EXPANDED-ICON="arrow-u"
+                 DATA-ICONPOS="right" DATA-ROLE="collapsible"> 
+               <H1>The probability of the bus arriving at the second stop
+               on time is 0.74 </H1>
+
+               <P>The probability of the bus not arriving at the first stop
+               on time and then arriving at second stop on time is 0.12 +
+               0.74 = 0.86 </P>
+
+               <P><LABEL FOR="switch"> True or False </LABEL><INPUT DATA-OFF-TEXT="False"
+                                                                    DATA-ON-TEXT="True"
+                                                                    DATA-ROLE="flipswitch"
+                                                                    ID="sw0"
+                                                                    NAME="switch"
+                                                                    TYPE="checkbox" />
+               </P>
+            </DIV>
+            <DIV DATA-COLLAPSED-ICON="arrow-d" DATA-EXPANDED-ICON="arrow-u"
+                 DATA-ICONPOS="right" DATA-ROLE="collapsible"> 
+               <H1>The probability of the bus arriving at the third stop on
+               time is 0.44 </H1>
+
+               <P>The probability of the bus arriving late at the first,
+               second and third stops is; (1 - 0.88)*(1 - 0.74)*(1 - 0.44)
+               = 0.018 </P>
+
+               <P><LABEL FOR="switch"> True or False </LABEL> 
+               <INPUT DATA-OFF-TEXT="False" DATA-ON-TEXT="True"
+                      DATA-ROLE="flipswitch" ID="sw1" NAME="switch"
+                      TYPE="checkbox" /> </P>
+            </DIV>
+         </DIV>
+
+         <P>
+         <A CLASS="ui-btn ui-btn-inline ui-corner-all" HREF="#submit"
+            ONCLICK="a3()"> submit </A> </P>
+
+         <P HIDDEN ID="d3"></P>
+         <DIV DATA-ROLE="footer"> 
+
+            <P>Make correct selections above to complete journey </P>
+         </DIV>
+      </DIV>
+   </DIV>
+</DIV>
+<DIV DATA-DIALOG="true" DATA-ROLE="page" ID="page3"> 
+   <DIV DATA-ROLE="header"> 
+
+      <P STYLE="color:red; font:bold 25px impact;">StatBus Access Refused 
+      <BR> Incorrect Seat Combination Selected </P>
+   </DIV>
+   <DIV DATA-ROLE="main"> 
+
+      <P>To find correct Seat colour combination; convert all non decimals
+      to decimals. 
+      <BR> The correct seat colour combination will have a sum of 1. </P>
+   </DIV>
+   <DIV CLASS="ui-content" DATA-ROLE="footer" STYLE="font-size:14px;"> 
+
+      <P>To change a fraction to a decimal; divide the top by the bottom. 
+      <BR> To change a percentage to a decimal; divide by 100. 
+      <BR> The mode in a set of data is the value that appears the most. 
+      <BR> </P>
+   </DIV>
+</DIV>
+<DIV DATA-DIALOG="false" DATA-ROLE="page" ID="page33"> 
+   <DIV ID="bg"> 
+      <DIV CLASS="ui-content" DATA-ROLE="header"> 
+         <A CLASS="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left"
+            DATA-REL="close" HREF="#page2"> Back To StatBus </A> 
+
+         <P>Mean and Medium Explained </P>
+      </DIV>
+      <DIV CLASS="ui-content" DATA-ROLE="main"> 
+
+         <P STYLE="background:#66FFFF">In a set of data the mean is found
+         by adding all the data up and then 
+         <BR> dividing by the number of individual pieces of data in the
+         set. </P>
+
+         <P STYLE="background:#FFCCFF">In a set of data the medium is found
+         by placing all the individual data 
+         <BR> in order of magnitude and selecting the middle piece of data. </P>
+
+         <P>If you record the number of people getting on a bus over a
+         journey of 5 stops. 
+         <BR> First stop, 3 people get on the bus. 
+         <BR> Second stop, 2 people get on the bus. 
+         <BR> Third stop, 4 poeple get on the bus. 
+         <BR> Fourth stop, 1 person gers on the bus. 
+         <BR> Fifth stop, 5 people get on the bus. </P>
+      </DIV>
+      <DIV DATA-ROLE="footer"
+           STYLE="font-weight: normal; padding:0 0 30px 0; "> 
+
+         <P>Putting the data in order of magnitude gives; 1, 2, 3, 4, 5. 
+         <BR> 
+
+         <P STYLE="background:#66FFFF">Mean = (sum of all data) / (number
+         of idividual pieces of data) 
+         <BR> &there4; Mean = (1 + 2 + 3 + 4 + 5) / 5 = 15 / 5 = 3 </P>
+
+         <P STYLE="background:#FFCCFF">The median is the middle value of
+         all the values. 
+         <BR> If there are two middle values, add the two values and divide
+         by two. 
+         <BR> Here, he medium is the third largest piece of data. &there4;
+         medium = 3 </P>
+      </DIV>
+   </DIV>
+</DIV>
+<DIV DATA-DIALOG="true" DATA-ROLE="page" ID="page333"> 
+   <DIV DATA-ROLE="header"> 
+
+      <P STYLE="color:red; font:bold 35px impact;">Journey Completion
+      refused 
+      <BR> Incorrect selection </P>
+   </DIV>
+   <DIV DATA-ROLE="main"> 
+
+      <P>When using one outcome OR another outcome; ADD probabilities. </P>
+
+      <P>When using one outcome AND another outcome; TIMES probabilities. </P>
+   </DIV>
+   <DIV CLASS="ui-content" DATA-ROLE="footer"> 
+      <H1>Close this page above and make new selection. </H1>
+   </DIV>
+</DIV>
+<DIV DATA-DIALOG="true" DATA-ROLE="page" ID="page4"> 
+   <DIV DATA-ROLE="main"> 
+
+      <P STYLE="color:gold; font:bold 35px impact;">Golden Ticket </P>
+      <A CLASS="ui-btn ui-corner-all" HREF="#page2"> Click Here 
+      <BR> For Next Stop </A> 
+
+      <P><SPAN STYLE="font:bold 14px arial; background:gold;"> Green seats
+      = 1/5 = 0.2, Black seats = 44% = 0.44, Pink seats = 0.36 
+      <BR> 0.2 + 0.44 + 0.36 = 1 </SPAN> </P>
+
+      <P><SPAN STYLE="font:bold 14px arial; background:gold;"> The red
+      value is the mode because it appears twice; the other values only
+      appear once. </SPAN> </P>
+   </DIV>
+   <DIV CLASS="ui-content" DATA-ROLE="footer" STYLE="font-size:14px;"> 
+
+      <P>To change a fraction to a decimal; divide the top by the bottom. 
+      <BR> To change a percentage to a decimal; divide by 100. 
+      <BR> The mode in a set of data is the value that appears the most. 
+      <BR> </P>
+   </DIV>
+</DIV>
+<DIV DATA-DIALOG="true" DATA-ROLE="page" ID="page44"> 
+   <DIV DATA-ROLE="main"> 
+
+      <P STYLE="color:gold; font:bold 35px impact;">Golden Ticket </P>
+      <A CLASS="ui-btn ui-corner-all" HREF="#page21"> Click Here 
+      <BR> For Next Stop </A> 
+
+      <P><SPAN STYLE="font:bold 14px arial; background:gold;"> Mean = (1 +
+      2 + 2 + 4 + 5 + 6) / 6 = 20 / 6 = 3.33 </SPAN> </P>
+
+      <P><SPAN STYLE="font:bold 14px arial; background:gold;"> (6 + 1) / 2
+      = 3.5, &there4; the medium lies 
+      <BR> between the 3rd and 4th largest values. 
+      <BR> &there4; medium = (2 + 4) / 2 = 3 </SPAN> </P>
+   </DIV>
+   <DIV CLASS="ui-content" DATA-ROLE="footer" STYLE="font-size:14px;"> 
+
+      <P>Click above to travel to the 2nd stop. </P>
+   </DIV>
+</DIV>
+<DIV DATA-DIALOG="true" DATA-ROLE="page" ID="page444"> 
+   <DIV DATA-ROLE="main"> 
+
+      <P STYLE="color:gold; font:bold 35px impact;">Golden Ticket </P>
+      <A CLASS="ui-btn ui-corner-all" HREF="#page1"> Click Here 
+      <BR> To Go Back To Start </A> 
+
+      <P><SPAN STYLE="font:bold 14px arial; background:gold;"> When using
+      one outcome OR another outcome; ADD probabilities. </SPAN> </P>
+
+      <P><SPAN STYLE="font:bold 14px arial; background:gold;"> When using
+      one outcome AND another outcome; TIMES probabilities. </SPAN> </P>
+   </DIV>
+   <DIV CLASS="ui-content" DATA-ROLE="footer"
+        STYLE="font-size:24px; background:gold;"> 
+
+      <P>Journey Complete </P>
+   </DIV>
+</DIV>
+<DIV DATA-DIALOG="true" DATA-ROLE="page" ID="page5"> 
+   <DIV DATA-ROLE="main"> 
+
+      <P STYLE="color:Silver; font:bold 35px impact;">Silver Ticket </P>
+      <A CLASS="ui-btn ui-corner-all" HREF="#page2"> Click Here 
+      <BR> For Next Stop </A> 
+
+      <P><SPAN STYLE="font:bold 14px arial; background:silver;"> Green
+      seats = 1/5 = 0.2, Black seats = 44% = 0.44, Pink seats = 0.36 
+      <BR> 0.2 + 0.44 + 0.36 = 1 </SPAN> </P>
+
+      <P><SPAN STYLE="font:bold 14px arial; background:pink;"> If no values
+      are repeated, there is no mode. </SPAN> </P>
+   </DIV>
+   <DIV CLASS="ui-content" DATA-ROLE="footer" STYLE="font-size:14px;"> 
+
+      <P>To change a fraction to a decimal; divide the top by the bottom. 
+      <BR> To change a percentage to a decimal; divide by 100. 
+      <BR> The mode in a set of data is the value that appears the most. 
+      <BR> </P>
+   </DIV>
+</DIV>
+<SCRIPT>
+  function a1() {
+      var vr2 = document.getElementById("red11").checked;
+      var v11 = document.getElementById("red").checked;
+      var v21 = document.getElementById("blue").checked;
+      var v31 = document.getElementById("white").checked;
+      var v1 = document.getElementById("green").checked;
+      var v2 = document.getElementById("black").checked;
+      var v3 = document.getElementById("pink").checked;
+      var v4 = document.getElementById("tat1").value;
+      var x;
+    if (v1 == true && v2 == true && v3 == true && v11 == false && v21 == false && v31 == false && vr2 == false && v4 == "y11") {
+      x = window.open("#page4", "_self");
+    }
+    else if (v1 == true && v2 == true && v3 == true && v11 == false && v21 == false && v31 == false && vr2 == false && v4 !== "y11") {
+      x = window.open("#page5", "_self");
+    }
+
+    else {
+      x = window.open("#page3", "_self");
+    }
+    document.getElementById("d1").innerHTML = x;
+  }
+</SCRIPT> 
+<SCRIPT>
+  function a2() {
+      var v1 = document.getElementById("red1").checked;
+      var v2 = document.getElementById("green1").checked;
+      var v3 = document.getElementById("blue1").checked;
+      var v4 = document.getElementById("black1").checked;
+      var v5 = document.getElementById("red2").checked;
+      var v6 = document.getElementById("green2").checked;
+      var v7 = document.getElementById("blue2").checked;
+      var v8 = document.getElementById("black2").checked;
+      var x;
+    if (v1 == false && v2 == false && v3 == false && v4 == true && v5 == false && v6 == false && v7 == true && v8 == false) {
+      x = window.open("#page44", "_self");
+    }
+    else {
+      x = window.open("#page33", "_self");
+    }
+      document.getElementById("d2").innerHTML = x;
+  }
+</SCRIPT> 
+<SCRIPT>
+  function a3() {
+      var v1 = document.getElementById("sw").checked;
+      var v2 = document.getElementById("sw0").checked;
+      var v3 = document.getElementById("sw1").checked;
+      var x;
+    if (v1 == true && v2 == false && v3 == true) {
+      x = window.open("#page444", "_self");
+    }
+    else {
+    x = window.open("#page333", "_self");
+    }
+    document.getElementById("d3").innerHTML = x;
+  }
+</SCRIPT> 
+</BODY>
+</HTML> 

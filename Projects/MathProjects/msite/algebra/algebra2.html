@@ -1,0 +1,205 @@
+<HTML> 
+<HEAD>
+   <TITLE>Simultaneous Equations </TITLE>
+   <META CHARSET="utf-8">
+   <META CONTENT="width=device-width, initial-scale=1" NAME="viewport">
+   <SCRIPT SRC="2q.min.js"></SCRIPT> 
+   <SCRIPT SRC="1.min.js"></SCRIPT> 
+   <LINK HREF="1.min.css" REL="stylesheet">
+   <LINK HREF="bra1.css" REL="stylesheet" TYPE="text/css" />
+   <SCRIPT SRC="bra2.js"></SCRIPT> 
+</HEAD>
+<BODY>
+<NAV CLASS="navbar navbar-inverse navbar-fixed-top"> 
+<DIV CLASS="container-fluid"> 
+   <DIV CLASS="navbar-header"> 
+      <BUTTON CLASS="navbar-toggle" DATA-TARGET="#myNavbar"
+              DATA-TOGGLE="collapse" TYPE="button"> <SPAN CLASS="icon-bar"></SPAN>
+      <SPAN CLASS="icon-bar"></SPAN> <SPAN CLASS="icon-bar"></SPAN> 
+      </BUTTON> <A CLASS="navbar-brand" HREF="../WebSite/StartPage.html">618-Math Home</A> 
+   </DIV>
+   <DIV CLASS="collapse navbar-collapse" ID="myNavbar"> 
+      <UL CLASS="nav navbar-nav">
+         <LI CLASS="dropdown">
+         <A CLASS="dropdown-toggle" DATA-TOGGLE="dropdown" HREF="#">Trigonometry<SPAN CLASS="caret"></SPAN></A>
+         
+         <UL CLASS="dropdown-menu">
+            <LI><A HREF="../Trigomometry/Pythagoras' theorem.html">Pythagoras</A></LI>
+            
+            <LI><A HREF="../Trigomometry/Sin Cos Tan.html">Sin Cos Tan</A></LI>
+            
+            <LI><A HREF="../Trigomometry/sin cos rules area triangle.html">Rules
+            and Area</A></LI> 
+         </UL></LI>
+         <LI CLASS="dropdown">
+         <A CLASS="dropdown-toggle" DATA-TOGGLE="dropdown" HREF="#">Algebra<SPAN CLASS="caret"></SPAN></A>
+         
+         <UL CLASS="dropdown-menu">
+            <LI><A HREF="../algebra/algebra.html">Basic Algebra</A></LI> 
+            <LI><A HREF="../algebra/algebra1.html">Simultaneous Equations</A></LI>
+            
+            <LI><A HREF="../algebra/algebra2.html">Quadratic Equations</A></LI>
+            
+         </UL></LI>
+         <LI><A HREF="../GCSE GUIDE HTML/FIRST PAGE.html" TARGET="_blank">Study
+         Guide</A></LI> 
+         <LI><A HREF="../trig calculator/trigcalc.html" TARGET="_blank">Trig
+         Calculator</A></LI> 
+         <LI><A HREF="../statbus/statbus.html" TARGET="_blank">Stat Bus</A></LI>
+         
+      </UL>
+      <UL CLASS="nav navbar-nav navbar-right">
+         <LI><A href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' TARGET="_blank"><SPAN CLASS="glyphicon glyphicon-envelope"></SPAN>
+         Contact</A></LI> 
+      </UL>
+   </DIV>
+</DIV>
+</NAV> 
+<DIV ID="bg"> 
+   <H1>Quadratic Equations </H1>
+   <H2>Method 1: Factorising </H2>
+   <BR> 
+   <H4>Question 1 </H4>
+   <BOX2> x<SUP>2</SUP> - x - 6 = 0 
+   </BOX2> 
+   <BOX1 ID="d1"> 
+   <BUTTON ONCLICK="a1()">Hint 1</BUTTON> 
+   </BOX1> 
+   <BOX1 ID="d2"> 
+   <BUTTON ONCLICK="a2()">Hint 2</BUTTON> 
+   </BOX1> 
+
+   <P CLASS="clr">
+   <BR> 
+   <BOX> 
+   <BUTTON ONCLICK="a4()"> Submit x values 
+   </BUTTON> 
+   <BR> 
+   <INPUT ID="i1" STYLE="width: 25%" TYPE="text" /> 
+   <INPUT ID="i2" STYLE="width: 25%" TYPE="text" /> 
+   <BR> 
+   <SPAM ID="d4"></SPAM> 
+   </BOX> 
+   <BOX2 ID="d3"> 
+   <BUTTON ONCLICK="a3()">Answer</BUTTON> 
+   </BOX1> 
+
+   <P CLASS="clr">
+   <BR> 
+   <H4>Question 2 </H4>
+   <BOX2> x<SUP>2</SUP> - x - 12 = 0 
+   </BOX2> 
+   <BOX1 ID="d11"> 
+   <BUTTON ONCLICK="b1()">Hint 1</BUTTON> 
+   </BOX1> 
+   <BOX1 ID="d21"> 
+   <BUTTON ONCLICK="b2()">Hint 2</BUTTON> 
+   </BOX1> 
+
+   <P CLASS="clr">
+   <BR> 
+   <BOX> 
+   <BUTTON ONCLICK="b4()"> Submit x values 
+   </BUTTON> 
+   <BR> 
+   <INPUT ID="i11" STYLE="width: 25%" TYPE="text" /> 
+   <INPUT ID="i21" STYLE="width: 25%" TYPE="text" /> 
+   <BR> 
+   <SPAM ID="d41"></SPAM> 
+   </BOX> 
+   <BOX2 ID="d31"> 
+   <BUTTON ONCLICK="b3()">Answer</BUTTON> 
+   </BOX2> 
+
+   <P CLASS="clr">
+   <BR> 
+   <H2>Method 2: Completing the Square </H2>
+   <BR> 
+   <H4>Question 3 </H4>
+   <BOX2> Solve to 2 decimal places 
+   <BR> 2x<SUP>2</SUP> + 6x - 3 = 0 
+   </BOX2> 
+   <BOX1 ID="d12"> 
+   <BUTTON ONCLICK="c1()">Hint 1</BUTTON> 
+   </BOX1> 
+   <BOX1 ID="d22"> 
+   <BUTTON ONCLICK="c2()">Hint 2</BUTTON> 
+   </BOX1> 
+
+   <P CLASS="clr">
+   <BR> 
+   <BOX> 
+   <BUTTON ONCLICK="c4()"> Submit x values 
+   </BUTTON> 
+   <BR> 
+   <INPUT ID="i22" STYLE="width: 25%" TYPE="text" /> 
+   <INPUT ID="i12" STYLE="width: 25%" TYPE="text" /> 
+   <BR> 
+   <SPAM ID="d42"></SPAM> 
+   </BOX> 
+   <BOX2 ID="d32"> 
+   <BUTTON ONCLICK="c3()">Answer</BUTTON> 
+   </BOX2> 
+
+   <P CLASS="clr">
+   <BR> 
+   <H4>Question 4 </H4>
+   <BOX2> Solve to 2 decimal places 
+   <BR> 4x<SUP>2</SUP> + 2x - 16 = 0 
+   </BOX2> 
+   <BOX1 ID="d124"> 
+   <BUTTON ONCLICK="c14()">Hint 1</BUTTON> 
+   </BOX1> 
+   <BOX1 ID="d224"> 
+   <BUTTON ONCLICK="c24()">Hint 2</BUTTON> 
+   </BOX1> 
+
+   <P CLASS="clr">
+   <BR> 
+   <BOX> 
+   <BUTTON ONCLICK="c44()"> Submit x values 
+   </BUTTON> 
+   <BR> 
+   <INPUT ID="i124" STYLE="width: 25%" TYPE="text" /> 
+   <INPUT ID="i224" STYLE="width: 25%" TYPE="text" /> 
+   <BR> 
+   <SPAM ID="d424"></SPAM> 
+   </BOX> 
+   <BOX2 ID="d324"> 
+   <BUTTON ONCLICK="c34()">Answer</BUTTON> 
+   </BOX2> 
+
+   <P CLASS="clr">
+   <BR> 
+   <H2>Method 3: Using the Formula </H2>
+   <BR> 
+   <H4>Question 5 </H4>
+   <BOX2> Solve to 2 decimal places<BR> 3x<SUP>2</SUP> + 5x - 7 = 0 
+   </BOX2> 
+   <BOX1 ID="d1245"> 
+   <BUTTON ONCLICK="c145()">Hint 1</BUTTON> 
+   </BOX1> 
+   <BOX1 ID="d2245"> 
+   <BUTTON ONCLICK="c245()">Hint 2</BUTTON> 
+   </BOX1> 
+
+   <P CLASS="clr">
+   <BR> 
+   <BOX> 
+   <BUTTON ONCLICK="c445()"> Submit x values 
+   </BUTTON> 
+   <BR> 
+   <INPUT ID="i1245" STYLE="width: 25%" TYPE="text" /> 
+   <INPUT ID="i2245" STYLE="width: 25%" TYPE="text" /> 
+   <BR> 
+   <SPAM ID="d4245"></SPAM> 
+   </BOX> 
+   <BOX2 ID="d3245"> 
+   <BUTTON ONCLICK="c345()">Answer</BUTTON> 
+   </BOX2> 
+
+   <P CLASS="clr">
+   <BR> 
+</DIV>
+</BODY>
+</HTML> 

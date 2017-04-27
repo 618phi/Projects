@@ -1,0 +1,131 @@
+<!DOCTYPE html> 
+<HTML LANG="en"> 
+<HEAD>
+   <TITLE>Pythagoras' Theorem </TITLE>
+   <META CHARSET="utf-8">
+   <META CONTENT="width=device-width, initial-scale=1" NAME="viewport">
+   <SCRIPT SRC="2q.min.js"></SCRIPT> 
+   <SCRIPT SRC="1.min.js"></SCRIPT> 
+   <LINK HREF="1.min.css" REL="stylesheet">
+   <LINK HREF="trig.css" REL="stylesheet" TYPE="text/css" />
+   <SCRIPT SRC="qry.js"></SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+   $("#id1").click(function() {
+        $("#id2").toggle();
+    });
+});
+   </SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id3").click(function() {
+        $("#id4").fadeToggle(3000);
+    });
+});
+   </SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id5").click(function() {
+        $("#id6").slideToggle(2000);
+    });
+});
+   </SCRIPT> 
+</HEAD>
+<BODY>
+<NAV CLASS="navbar navbar-inverse navbar-fixed-top"> 
+<DIV CLASS="container-fluid"> 
+   <DIV CLASS="navbar-header"> 
+      <BUTTON CLASS="navbar-toggle" DATA-TARGET="#myNavbar"
+              DATA-TOGGLE="collapse" TYPE="button"> <SPAN CLASS="icon-bar"></SPAN>
+      <SPAN CLASS="icon-bar"></SPAN> <SPAN CLASS="icon-bar"></SPAN> 
+      </BUTTON> <A CLASS="navbar-brand" HREF="../WebSite/StartPage.html">618-Math Home</A> 
+   </DIV>
+   <DIV CLASS="collapse navbar-collapse" ID="myNavbar"> 
+      <UL CLASS="nav navbar-nav">
+         <LI CLASS="dropdown">
+         <A CLASS="dropdown-toggle" DATA-TOGGLE="dropdown" HREF="#">Trigonometry<SPAN CLASS="caret"></SPAN></A>
+         
+         <UL CLASS="dropdown-menu">
+            <LI><A HREF="../Trigomometry/Pythagoras' theorem.html">Pythagoras</A></LI>
+            
+            <LI><A HREF="../Trigomometry/Sin Cos Tan.html">Sin Cos Tan</A></LI>
+            
+            <LI><A HREF="../Trigomometry/sin cos rules area triangle.html">Rules
+            and Area</A></LI> 
+         </UL></LI>
+         <LI CLASS="dropdown">
+         <A CLASS="dropdown-toggle" DATA-TOGGLE="dropdown" HREF="#">Algebra<SPAN CLASS="caret"></SPAN></A>
+         
+         <UL CLASS="dropdown-menu">
+            <LI><A HREF="../algebra/algebra.html">Basic Algebra</A></LI> 
+            <LI><A HREF="../algebra/algebra1.html">Simultaneous Equations</A></LI>
+            
+            <LI><A HREF="../algebra/algebra2.html">Quadratic Equations</A></LI>
+            
+         </UL></LI>
+         <LI><A HREF="../GCSE GUIDE HTML/FIRST PAGE.html" TARGET="_blank">Study
+         Guide</A></LI> 
+         <LI><A HREF="../trig calculator/trigcalc.html" TARGET="_blank">Trig
+         Calculator</A></LI> 
+         <LI><A HREF="../statbus/statbus.html" TARGET="_blank">Stat Bus</A></LI>
+         
+      </UL>
+      <UL CLASS="nav navbar-nav navbar-right">
+         <LI><A href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' TARGET="_blank"><SPAN CLASS="glyphicon glyphicon-envelope"></SPAN>
+         Contact</A></LI> 
+      </UL>
+   </DIV>
+</DIV>
+</NAV> 
+<DIV ID="bg"> 
+   <H1>Pythagoras' Theorem </H1>
+   <H3>Question 1 </H3>
+   <H4>Using Pythagoras' theorem, find the length of side h. </H4>
+   <IMG CLASS="fl" SRC="pics\3 4 5 triangle.jpg" /> 
+   <BOX ID="id1"> Click here to see worked answer. Click again to hide
+   answer. 
+   </BOX> 
+   <BR> 
+   <BOX HIDDEN ID="id2"> h<SUP>2</SUP> = 4<SUP>2</SUP> + 3<SUP>2</SUP> 
+   <BR> &there4; h = &radic;( 16 + 9) 
+   <BR> &there4; h = &radic;( 25) 
+   <BR> &there4; side h = 5m 
+   </BOX> 
+
+   <P CLASS="clr"></P>
+   <BR> 
+   <H3>Question 2 </H3>
+   <H4>Using Pythagoras' theorem, find the length of side a. </H4>
+   <IMG CLASS="fl" SRC="pics\5 12 13 triangle.jpg" /> 
+   <BOX ID="id3"> Click here to see worked answer. Click again to hide
+   answer. 
+   </BOX> 
+   <BOX HIDDEN ID="id4"> 13<SUP>2</SUP> = a<SUP>2</SUP> + 5<SUP>2</SUP> 
+   <BR> &there4; a<SUP>2</SUP> = 13<SUP>2</SUP> - 5<SUP>2</SUP> 
+   <BR> &there4; a = &radic;( 169 - 25) 
+   <BR> &there4; a = &radic;( 144) &there4;side a = 12m 
+   </BOX> 
+
+   <P CLASS="clr"></P>
+   <BR> 
+   <H3>Question 3 </H3>
+   <H4>Use Pythagoras' theorem to find the length of line y of the
+   equilateral triangle below; give answer correct to one decimal place. </H4>
+   <IMG CLASS="fl" SRC="pics\6 6 6 triangle.jpg" /> 
+   <BOX ID="id5"> Click here to see worked answer. Click again to hide
+   answer. 
+   </BOX> 
+   <BOX HIDDEN ID="id6"> 
+   <IMG CLASS="fl" SRC="pics\3 5.2 6 triangle.jpg" STYLE="padding: 0 0 0 10%" />
+   <SPAN CLASS="fr" STYLE="padding: 0 10% 0 0"> 6<SUP>2</SUP> = y<SUP>2</SUP>
+   + 3<SUP>2</SUP> 
+   <BR> &there4; y<SUP>2</SUP> = 6<SUP>2</SUP> - 3<SUP>2</SUP> 
+   <BR> &there4; y = &radic;( 36 - 9) 
+   <BR> &there4; y = &radic;( 27) &there4; line y = 5.2m </SPAN> 
+   </BOX> 
+
+   <P CLASS="clr"></P>
+   <BR> 
+</DIV>
+</BODY>
+</HTML> 

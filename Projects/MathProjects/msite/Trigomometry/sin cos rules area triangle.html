@@ -1,0 +1,184 @@
+<!DOCTYPE html> 
+<HTML> 
+<HEAD>
+   <TITLE>Trig Rules and Area </TITLE>
+   <META CHARSET="utf-8">
+   <META CONTENT="width=device-width, initial-scale=1" NAME="viewport">
+   <SCRIPT SRC="2q.min.js"></SCRIPT> 
+   <SCRIPT SRC="1.min.js"></SCRIPT> 
+   <LINK HREF="1.min.css" REL="stylesheet">
+   <LINK HREF="trig.css" REL="stylesheet" TYPE="text/css" />
+   <SCRIPT SRC="qry.js"></SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id1").click(function() {
+        $("span").eq(6).css({"color": "thistle"});
+        $("span").eq(7).css({"color": "white"});
+    });
+});
+   </SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id2").click(function() {
+        $("span").eq(6).css({"color": "gray"});
+        $("span").eq(7).css({"color": "gray"});
+    });
+});
+   </SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id3").click(function() {
+        $("span").filter(".gry").css({"color": "white"});  //turns grey to white in class gry
+		$("span").eq(8).show();
+        $("span").eq(9).hide();
+    });
+});
+   </SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id4").click(function() {
+        $("span").filter(".gry1").css({"color": "white"});  //turns grey to white in class gry1
+		$("span").eq(8).hide();
+        $("span").eq(9).show();
+     });
+});
+   </SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id5").click(function() {
+        $("span").eq(8).hide();
+        $("span").eq(9).hide();
+    });
+});
+   </SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id6").click(function() {
+        $("#img1").animate({ height: '200px', opacity: '0.25'}, 3000);
+        $("#img1").animate({ width: '600px', opacity: '1'}, 3000);
+    });
+});
+   </SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id7").click(function() {
+        $("#img1").animate({ width: '30px', opacity: '0.25'}, 3000);
+        $("#img1").animate({ height: '15px', opacity: '1'}, 3000);
+    });
+});
+   </SCRIPT> 
+</HEAD>
+<BODY>
+<NAV CLASS="navbar navbar-inverse navbar-fixed-top"> 
+<DIV CLASS="container-fluid"> 
+   <DIV CLASS="navbar-header"> 
+      <BUTTON CLASS="navbar-toggle" DATA-TARGET="#myNavbar"
+              DATA-TOGGLE="collapse" TYPE="button"> <SPAN CLASS="icon-bar"></SPAN>
+      <SPAN CLASS="icon-bar"></SPAN> <SPAN CLASS="icon-bar"></SPAN> 
+      </BUTTON> <A CLASS="navbar-brand" HREF="../WebSite/StartPage.html">618-Math Home</A> 
+   </DIV>
+   <DIV CLASS="collapse navbar-collapse" ID="myNavbar"> 
+      <UL CLASS="nav navbar-nav">
+         <LI CLASS="dropdown">
+         <A CLASS="dropdown-toggle" DATA-TOGGLE="dropdown" HREF="#">Trigonometry<SPAN CLASS="caret"></SPAN></A>
+         
+         <UL CLASS="dropdown-menu">
+            <LI><A HREF="../Trigomometry/Pythagoras' theorem.html">Pythagoras</A></LI>
+            
+            <LI><A HREF="../Trigomometry/Sin Cos Tan.html">Sin Cos Tan</A></LI>
+            
+            <LI><A HREF="../Trigomometry/sin cos rules area triangle.html">Rules
+            and Area</A></LI> 
+         </UL></LI>
+         <LI CLASS="dropdown">
+         <A CLASS="dropdown-toggle" DATA-TOGGLE="dropdown" HREF="#">Algebra<SPAN CLASS="caret"></SPAN></A>
+         
+         <UL CLASS="dropdown-menu">
+            <LI><A HREF="../algebra/algebra.html">Basic Algebra</A></LI> 
+            <LI><A HREF="../algebra/algebra1.html">Simultaneous Equations</A></LI>
+            
+            <LI><A HREF="../algebra/algebra2.html">Quadratic Equations</A></LI>
+            
+         </UL></LI>
+         <LI><A HREF="../GCSE GUIDE HTML/FIRST PAGE.html" TARGET="_blank">Study
+         Guide</A></LI> 
+         <LI><A HREF="../trig calculator/trigcalc.html" TARGET="_blank">Trig
+         Calculator</A></LI> 
+         <LI><A HREF="../statbus/statbus.html" TARGET="_blank">Stat Bus</A></LI>
+         
+      </UL>
+      <UL CLASS="nav navbar-nav navbar-right">
+         <LI><A href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' TARGET="_blank"><SPAN CLASS="glyphicon glyphicon-envelope"></SPAN>
+         Contact</A></LI> 
+      </UL>
+   </DIV>
+</DIV>
+</NAV> 
+<DIV ID="bg"> 
+   <H1>Cosine and Sine Rules / Area of a Triangle </H1>
+   <H3>Question 1 </H3>
+   <H4>Use the sine rule to find side p. Then use the length p with the
+   sine rule to find length of side q. Use 4 decimal places when working
+   out, but show your answers correct to 2 decimal places. </H4>
+   <IMG CLASS="fl" SRC="pics\12 p q triangle.jpg" /> 
+   <BUTTON ID="id1"> Click for worked answers 
+   </BUTTON> 
+   <BUTTON ID="id2"> Click to hide answers 
+   </BUTTON> 
+   <BR><BR> 
+   <BOX> <SPAN STYLE="padding:0 0 0 1%; color: gray; float: left"> 
+   ( p / sin(70) ) = ( 12 / sin(30) ) 
+   <BR> &there4; p = ( 12 * sin(70) ) / sin(30) 
+   <BR> &there4; p = 22.5526 
+   <BR> &there4; side p = 22.55m </SPAN> 
+   <SPAN CLASS="fr" STYLE="padding: 0 0 0 1%; color: gray;"> 
+   Q = 180 - 70 - 30 = 100 
+   <BR> &there4; ( q / sin(80) ) = ( 22.5526 / sin(70) ) 
+   <BR> &there4; q = 22.5526 * sin(80) / sin(70) 
+   <BR> &there4; q = 23.6354 &there4; side q = 23.64m </SPAN> 
+   </BOX> 
+
+   <P CLASS="clr"></P>
+   <BR> 
+   <H3>Question 2 </H3>
+   <H4>Use the cosine rule to find side b. Then use the cosine rule to find
+   angle A. Use 4 decimal places when working out, but show your answers
+   correct to 2 decimal places. </H4>
+   <IMG CLASS="fl" SRC="pics\3.5 7.4 b triangle.jpg" /> 
+   <BUTTON ID="id3"> Side b answer 
+   </BUTTON> 
+   <BUTTON ID="id4"> Angle A answer 
+   </BUTTON> 
+   <BUTTON ID="id5"> Hide answers 
+   </BUTTON> 
+   <BR><BR> 
+   <BOX1> <SPAN CLASS="gry"> b<SUP>2</SUP> = 3.5<SUP>2</SUP> + 7.4<SUP>2</SUP>
+   - ( 2 * 3.5 * 7.4 * cos(30) )<BR>&there4; b<SUP>2</SUP> = 22.1499<BR>&there4;
+   b = &radic; 22.1499 = 4.7064<BR>&there4; side b = 4.71m </SPAN> 
+   <SPAN CLASS="gry1"> 3.5<SUP>2</SUP> = 4.7064<SUP>2</SUP> + 7.4<SUP>2</SUP>
+   - ( 2 * 4.7064 * 7.4 * cos(A) )<BR>&there4; cos(A) = ( 4.7064<SUP>2</SUP>
+   + 7.4<SUP>2</SUP> - 3.5<SUP>2</SUP> ) / ( 2 * 4.7064 * 7.4 )<BR>&there4;
+   cos(A) = 0.9283 &there4; A = cos<SUP>-1</SUP>(0.9283) = 21.8287<BR>&there4;
+   angle A = 21.83<SUP>o</SUP> </SPAN> 
+   </BOX1> 
+
+   <P CLASS="clr"></P>
+   <BR> 
+   <H3>Question 3 </H3>
+   <H4>Using the the correct formula, find the area of the triangle below.
+   Make your answer correct to 2 decimal places. </H4>
+   <IMG CLASS="fl" SRC="pics\11 7 x triangle.jpg" /> 
+   <BUTTON ID="id6"> Click to show worked answer 
+   </BUTTON> 
+   <BUTTON ID="id7"> Click to hide answer 
+   </BUTTON> 
+   <BR><BR> 
+   <IMG CLASS="fl" ID="img1" SRC="pics\triangle area.jpg"
+        STYLE="padding:0 0 0 20px; width:30px; height:15px; position: relative;" />
+   
+
+   <P CLASS="clr"></P>
+   <BR> 
+</DIV>
+</BODY>
+</HTML> 

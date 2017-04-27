@@ -1,3 +1,10 @@
+- title: 618-Math
+  folder: MathProjects/msite/
+  type: math 
+  source: 'https://youtu.be/8J1fYrvH1H4'
+  image: 'math.png'
+  content: 'GCSE maths website.'
+
 - title: 618-Calc
   folder: MathProjects/calc/
   type: math
@@ -20,12 +27,7 @@
   image: 'java.png'
   content: 'MySQL Database management application for Windows.'
   
-- title: 618-MathSite
-  folder: MathProjects/msite/
-  type: math 
-  source: 'https://youtu.be/8J1fYrvH1H4'
-  image: 'math.png'
-  content: 'GCSE maths website.'
+
   
 
  

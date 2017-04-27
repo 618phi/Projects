@@ -1,0 +1,169 @@
+<HTML> 
+<HEAD>
+   <TITLE>Simultaneous Equations </TITLE>
+   <META CHARSET="utf-8">
+   <META CONTENT="width=device-width, initial-scale=1" NAME="viewport">
+   <SCRIPT SRC="2q.min.js"></SCRIPT> 
+   <SCRIPT SRC="1.min.js"></SCRIPT> 
+   <LINK HREF="1.min.css" REL="stylesheet">
+   <LINK HREF="bra1.css" REL="stylesheet" TYPE="text/css" />
+   <SCRIPT SRC="bra1.js" TYPE="text/javascript"></SCRIPT> 
+</HEAD>
+<BODY>
+<NAV CLASS="navbar navbar-inverse navbar-fixed-top"> 
+<DIV CLASS="container-fluid"> 
+   <DIV CLASS="navbar-header"> 
+      <BUTTON CLASS="navbar-toggle" DATA-TARGET="#myNavbar"
+              DATA-TOGGLE="collapse" TYPE="button"> <SPAN CLASS="icon-bar"></SPAN>
+      <SPAN CLASS="icon-bar"></SPAN> <SPAN CLASS="icon-bar"></SPAN> 
+      </BUTTON> <A CLASS="navbar-brand" HREF="../WebSite/StartPage.html">618-Math Home</A> 
+   </DIV>
+   <DIV CLASS="collapse navbar-collapse" ID="myNavbar"> 
+      <UL CLASS="nav navbar-nav">
+         <LI CLASS="dropdown">
+         <A CLASS="dropdown-toggle" DATA-TOGGLE="dropdown" HREF="#">Trigonometry<SPAN CLASS="caret"></SPAN></A>
+         
+         <UL CLASS="dropdown-menu">
+            <LI><A HREF="../Trigomometry/Pythagoras' theorem.html">Pythagoras</A></LI>
+            
+            <LI><A HREF="../Trigomometry/Sin Cos Tan.html">Sin Cos Tan</A></LI>
+            
+            <LI><A HREF="../Trigomometry/sin cos rules area triangle.html">Rules
+            and Area</A></LI> 
+         </UL></LI>
+         <LI CLASS="dropdown">
+         <A CLASS="dropdown-toggle" DATA-TOGGLE="dropdown" HREF="#">Algebra<SPAN CLASS="caret"></SPAN></A>
+         
+         <UL CLASS="dropdown-menu">
+            <LI><A HREF="../algebra/algebra.html">Basic Algebra</A></LI> 
+            <LI><A HREF="../algebra/algebra1.html">Simultaneous Equations</A></LI>
+            
+            <LI><A HREF="../algebra/algebra2.html">Quadratic Equations</A></LI>
+            
+         </UL></LI>
+         <LI><A HREF="../GCSE GUIDE HTML/FIRST PAGE.html" TARGET="_blank">Study
+         Guide</A></LI> 
+         <LI><A HREF="../trig calculator/trigcalc.html" TARGET="_blank">Trig
+         Calculator</A></LI> 
+         <LI><A HREF="../statbus/statbus.html" TARGET="_blank">Stat Bus</A></LI>
+         
+      </UL>
+      <UL CLASS="nav navbar-nav navbar-right">
+         <LI><A href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' TARGET="_blank"><SPAN CLASS="glyphicon glyphicon-envelope"></SPAN>
+         Contact</A></LI> 
+      </UL>
+   </DIV>
+</DIV>
+</NAV> 
+<DIV ID="bg"> 
+   <H1>Simultaneous Equations </H1>
+   <H4>Question 1 </H4>
+   <BOX2> [1] 2x + 4y = 6 
+   <BR> [2] (-4x) - 3y = 3 
+   </BOX2> 
+   <BOX1 ID="d1"> 
+   <BUTTON ONCLICK="a1()">Hint 1</BUTTON> 
+   </BOX1> 
+   <BOX1 ID="d2"> 
+   <BUTTON ONCLICK="a2()">Hint 2</BUTTON> 
+   </BOX1> 
+
+   <P CLASS="clr">
+   <BR> 
+   <BOX> 
+   <BUTTON ONCLICK="a4()">Submit x value</BUTTON> 
+   <BR> 
+   <INPUT ID="i1" TYPE="text" /> 
+   <BR> 
+   <SPAM ID="d4"></SPAM> 
+   </BOX> 
+   <BOX> 
+   <BUTTON ONCLICK="a5()">Submit y value</BUTTON> 
+   <BR> 
+   <INPUT ID="i2" TYPE="text" /> 
+   <BR> 
+   <SPAM ID="d5"></SPAM> 
+   </BOX> 
+   <BOX2 ID="d3"> 
+   <BUTTON ONCLICK="a3()">Answer</BUTTON> 
+   </BOX2> 
+
+   <P CLASS="clr"></P>
+   <BR> 
+   <H4>Question 2 </H4>
+   <BOX2> [1] 2x - 3y = 11 
+   <BR> [2] 5x + 2y = -1 
+   </BOX2> 
+   <BOX1 ID="d6"> 
+   <BUTTON ONCLICK="b1()">Hint 1</BUTTON> 
+   </BOX1> 
+   <BOX1 ID="d7"> 
+   <BUTTON ONCLICK="b2()">Hint 2</BUTTON> 
+   </BOX1> 
+
+   <P CLASS="clr"></P>
+   <BR> 
+   <BOX> 
+   <BUTTON ONCLICK="b4()">Submit x value</BUTTON> 
+   <BR> 
+   <INPUT ID="i3" TYPE="text" /> 
+   <BR> 
+   <SPAM ID="d9"></SPAM> 
+   </BOX> 
+   <BOX> 
+   <BUTTON ONCLICK="b5()">Submit y value</BUTTON> 
+   <BR> 
+   <INPUT ID="i4" TYPE="text" /> 
+   <BR> 
+   <SPAM ID="d10"></SPAM> 
+   </BOX> 
+   <BOX2 ID="d8"> 
+   <BUTTON ONCLICK="b3()">Answer</BUTTON> 
+   </BOX2> 
+
+   <P CLASS="clr"></P>
+   <BR> 
+   <H4>Question 3 </H4>
+   <BOX2> [1] x + y - z = 4 
+   <BR> [2] x - 2y + 3z = -6 
+   <BR> [3] 2x + 3y + z = 7 
+   </BOX2> 
+   <BOX1 ID="d11"> 
+   <BUTTON ONCLICK="c1()">Hint 1</BUTTON> 
+   </BOX1> 
+   <BOX1 ID="d12"> 
+   <BUTTON ONCLICK="c2()">Hint 2</BUTTON> 
+   </BOX1> 
+
+   <P CLASS="clr"></P>
+   <BR> 
+   <BOX> 
+   <BUTTON ONCLICK="c4()">Submit x value</BUTTON> 
+   <BR> 
+   <INPUT ID="i5" TYPE="text" /> 
+   <BR> 
+   <SPAM ID="d14"></SPAM> 
+   </BOX> 
+   <BOX> 
+   <BUTTON ONCLICK="c5()">Submit y value</BUTTON> 
+   <BR> 
+   <INPUT ID="i6" TYPE="text" /> 
+   <BR> 
+   <SPAM ID="d15"></SPAM> 
+   </BOX> 
+   <BOX> 
+   <BUTTON ONCLICK="c6()">Submit z value</BUTTON> 
+   <BR> 
+   <INPUT ID="i7" TYPE="text" /> 
+   <BR> 
+   <SPAM ID="d16"></SPAM> 
+   </BOX> 
+   <BOX2 ID="d13" STYLE="width: 15%"> 
+   <BUTTON ONCLICK="c3()">Answer</BUTTON> 
+   </BOX2> 
+
+   <P CLASS="clr"></P>
+   <BR> 
+</DIV>
+</BODY>
+</HTML> 

@@ -1,0 +1,15 @@
+
+
+body {
+      background: black; 
+ }
+
+#bg {
+     background: silver;  padding: 5%; margin:2% 1% 2% 0; border-radius:75px; 
+ }
+
+h1 {
+text-align:center; text-shadow: 3px 3px 3px purple; 
+
+}
+

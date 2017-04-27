@@ -1,0 +1,70 @@
+body {
+background: black; 
+}
+
+#bg {
+background: silver;  padding: 1% 5%; margin: 6% 2% 2% 2%; border-radius:10%; 
+}
+
+h1 {
+text-align: center; text-shadow: 3px 3px 3px purple; 
+
+}
+
+h3 {
+color: blue; margin: 0 0 0 10%; text-shadow: 2px 2px 2px black; 
+}
+
+h4 {
+	margin: 1% 1% 2% 10%;
+}
+
+.fl {
+float: left; width: 30%;
+}
+
+.fr {
+	float: right;
+}
+
+box {
+float: left; color: white; background: gray; width: 60%; border: 2px solid gold; margin: 1% 0 0 5%; padding: 1%; text-align: center; font: bold 20px modern; 
+}
+
+box1 {
+float: left; color: white; background: gray; width: 50%; border: 2px solid gold; margin: 1% 0 0 5%; padding: 1%; text-align: center; font: bold 20px modern; 
+}
+
+.clr {
+clear: both;
+}
+
+button {
+float: left; background:gold; margin: 0 0 0 5%; 
+}
+
+
+.hide {
+display: none;
+}
+
+.pad {
+padding: 2%;
+}
+
+.br {
+color: brown;
+}
+
+.fnt {
+font-size: 20px;
+}
+
+.gry {
+color: gray;
+}
+
+.gry1 {
+color: gray;
+}
+                                              

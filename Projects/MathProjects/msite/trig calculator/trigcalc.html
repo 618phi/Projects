@@ -1,0 +1,355 @@
+<!DOCTYPE html> 
+<HTML LANG="en"> 
+<HEAD>
+   <TITLE>Trigonometry Calculators</TITLE> 
+   <META CHARSET="utf-8">
+   <META CONTENT="width=device-width, initial-scale=1" NAME="viewport">
+   <SCRIPT SRC="2q.min.js"></SCRIPT> 
+   <SCRIPT SRC="1.min.js"></SCRIPT> 
+   <LINK HREF="1.min.css" REL="stylesheet">
+   <STYLE>
+  body {
+background: black;
+}
+
+#bg {
+background: silver;  padding: 1% 5%; margin: 2% 2% 2% 2%; border-radius:10%;
+}
+
+#a   {
+text-align:center; text-shadow: 3px 3px 3px purple;
+}
+
+h2  {
+margin:2% 0 0 5%; color: blue; text-shadow: 2px 2px 2px black;
+}
+   </STYLE> 
+</HEAD>
+
+<body>
+
+
+
+ <div style="margin:2%; class="container"> 
+<DIV ID="bg"> 
+   <DIV CLASS="jumbotron"
+        STYLE="text-align: center; border-radius:20%; background: seashell; ">
+      
+      <H1 ID="a">Trigonometry Calculators </H1>
+      <H3 CLASS="hidden-xs">
+      <UL>
+         <LI>If the unknown value is Q, input Q for the Q value.</LI> 
+         <LI>If the unknown value is h, input h for the h value; and so on.</LI>
+         
+         <LI>All angle values are in degrees and should be entered as a
+         number only. </LI>
+         <LI>All inputs are case-sensitive and all answers are given to 4
+         decimal places.</LI> 
+      </UL></H3>
+      <H4 CLASS="visible-xs">
+      <UL>
+         <LI>If the unknown value is Q, input Q for the Q value.</LI> 
+         <LI>If the unknown value is h, input h for the h value; and so on.</LI>
+         
+         <LI>All angle values are in degrees and should be entered as a
+         number only. </LI>
+         <LI>All inputs are case-sensitive and all answers are given to 4
+         decimal places.</LI> 
+      </UL></H4>
+   </DIV>
+   <DIV CLASS="row"> 
+      <DIV CLASS="col-sm-4"> 
+         <H2>Phythagoras' Calculator</H2> 
+         <H4>Input exactly one unknown value.<BR> Input exactly two known
+         values. </H4>
+         <IMG ALT="triangle1" CLASS="img-responsive img-rounded"
+              SRC="triangle1.jpg"> 
+         <H3>
+         <FORM CLASS="form-inline">
+         <DIV CLASS="form-group"> <LABEL CLASS=" label label-info" FOR="id1">h
+            value:</LABEL> 
+            <INPUT CLASS="form-control" ID="id1" TYPE="text" /> 
+            <BR> <LABEL CLASS=" label label-info" FOR="id2">x value:</LABEL> 
+            <INPUT CLASS="form-control" ID="id2" TYPE="text" /> 
+            <BR> <LABEL CLASS=" label label-info" FOR="id3">y value:</LABEL> 
+            <INPUT CLASS="form-control" ID="id3" TYPE="text" /> 
+         </DIV>
+         </FORM>
+         <BR> <SPAN STYLE="font-size:18px;"> 
+         <LABEL CLASS="label label-success" ID="id4"></LABEL></SPAN> 
+         <BR><BR> 
+         <BUTTON CLASS="btn btn-primary" ONCLICK="a1()">Click For Answer</BUTTON>
+         </H3>
+      </DIV>
+      <DIV CLASS="col-sm-4"> 
+         <H2>Trig Calculator 
+         <BR> (right angle)</H2> 
+         <H4>Input exactly two unknown values.<BR> Input exactly two known
+         values. </H4>
+         <IMG ALT="triangle2" CLASS="img-responsive img-rounded"
+              SRC="triangle2.jpg"> 
+         <H3>
+         <FORM CLASS="form-inline">
+         <DIV CLASS="form-group"> 
+            <LABEL CLASS=" label label-info" FOR="id11">Q value:</LABEL> 
+            <INPUT CLASS="form-control" ID="id11" TYPE="text" /> 
+            <BR> <LABEL CLASS=" label label-info" FOR="id21">h value:</LABEL>
+            
+            <INPUT CLASS="form-control" ID="id21" TYPE="text" /> 
+            <BR> <LABEL CLASS=" label label-info" FOR="id31">x value:</LABEL>
+            
+            <INPUT CLASS="form-control" ID="id31" TYPE="text" /> 
+            <BR> <LABEL CLASS=" label label-info" FOR="id5">y value:</LABEL> 
+            <INPUT CLASS="form-control" ID="id5" TYPE="text" /> 
+         </DIV>
+         </FORM>
+         <BR> <SPAN STYLE="font-size:18px;"> 
+         <LABEL CLASS="label label-success" ID="id41"></LABEL></SPAN> 
+         <BR><BR> 
+         <BUTTON CLASS="btn btn-primary" ONCLICK="a11()">Click For Answer</BUTTON>
+         </H3>
+      </DIV>
+      <DIV CLASS="col-sm-4"> 
+         <H2>Trig Calculator 
+         <BR> (cos/sin rule)</H2> 
+         <H4>Input exactly three unknown value.<BR> Input exactly three
+         known values. </H4>
+         <IMG ALT="triangle3" CLASS="img-responsive img-rounded"
+              SRC="triangle3.jpg"> 
+         <H3>
+         <FORM CLASS="form-inline">
+         <DIV CLASS="form-group"> 
+            <LABEL CLASS=" label label-info" FOR="id111">A value:</LABEL> 
+            <INPUT CLASS="form-control" ID="id111" TYPE="text" /> 
+            <BR> <LABEL CLASS=" label label-info" FOR="id211">B value:</LABEL>
+            
+            <INPUT CLASS="form-control" ID="id211" TYPE="text" /> 
+            <BR> <LABEL CLASS=" label label-info" FOR="id311">C value:</LABEL>
+            
+            <INPUT CLASS="form-control" ID="id311" TYPE="text" /> 
+            <BR> <LABEL CLASS=" label label-info" FOR="id51">a value:</LABEL>
+            
+            <INPUT CLASS="form-control" ID="id51" TYPE="text" /> 
+            <BR> <LABEL CLASS=" label label-info" FOR="id6">b value:</LABEL> 
+            <INPUT CLASS="form-control" ID="id6" TYPE="text" /> 
+            <BR> <LABEL CLASS=" label label-info" FOR="id7">c value:</LABEL> 
+            <INPUT CLASS="form-control" ID="id7" TYPE="text" /> 
+         </DIV>
+         </FORM>
+         <BR> <SPAN STYLE="font-size:18px;"> 
+         <LABEL CLASS="label label-success" ID="id411"></LABEL></SPAN> 
+         <BR><BR> 
+         <BUTTON CLASS="btn btn-primary" ONCLICK="a111()">Click For Answer</BUTTON>
+         </H3>
+      </DIV>
+   </DIV>
+</DIV>
+</DIV>
+<SCRIPT>
+function a1() {
+var v1 = document.getElementById("id1").value;
+var v2 = document.getElementById("id2").value;
+var v3 = document.getElementById("id3").value;
+var v4;
+if (v1 == "h") {
+v4 = "h = " + Math.sqrt(v2*v2+v3*v3).toFixed(4);
+}
+else if (v2 == "x") {
+v4 = "x = " + Math.sqrt(v1*v1-v3*v3).toFixed(4);
+}
+else if (v3 == "y") {
+v4 = "y = " + Math.sqrt(v1*v1-v2*v2).toFixed(4);
+}
+else {
+v4 = "Incorrect input; see instructions above.";
+}
+document.getElementById("id4").innerHTML = v4;
+}
+</SCRIPT> 
+<SCRIPT>
+function a11() {
+var v11 = document.getElementById("id11").value;
+var v21 = document.getElementById("id21").value;
+var v31 = document.getElementById("id31").value;
+var v5 = document.getElementById("id5").value;
+var v41;
+if (v11 == "Q" && v21 == "h") {
+v41 = "Q = " + (Math.atan(v31/v5)*180/Math.PI).toFixed(4) + "<sup>o</sup> and h = " + Math.sqrt(v5*v5+v31*v31).toFixed(4);
+}
+else if (v11 == "Q" && v31 == "x") {
+v41 = "Q = " + (Math.acos(v5/v21)*180/Math.PI).toFixed(4) + "<sup>o</sup> and x = " + Math.sqrt(v21*v21-v5*v5).toFixed(4);
+}
+else if (v11 == "Q" && v5 == "y") {
+v41 = "Q = " + (Math.asin(v31/v21)*180/Math.PI).toFixed(4) + "<sup>o</sup> and y = " + Math.sqrt(v21*v21-v31*v31).toFixed(4);
+}
+else if (v21 == "h" && v5 == "y") {
+v41 = "h = " + (v31/Math.sin(v11*Math.PI/180)).toFixed(4) + " and y = " + (v31/Math.tan(v11*Math.PI/180)).toFixed(4);
+}
+else if (v21 == "h" && v31 == "x") {
+v41 = "h = " + (v5/Math.cos(v11*Math.PI/180)).toFixed(4) + " and x = " + (v5*Math.tan(v11*Math.PI/180)).toFixed(4);
+}
+else if (v5 == "y" && v31 == "x") {
+v41 = "y = " + (v21*Math.cos(v11*Math.PI/180)).toFixed(4) + " and x = " + (v21*Math.sin(v11*Math.PI/180)).toFixed(4);
+}
+else {
+v41 = "Incorrect input; see instructions above.";
+}
+document.getElementById("id41").innerHTML = v41;
+}
+</SCRIPT> 
+<SCRIPT>
+function a111() {
+var v111 = document.getElementById("id111").value;
+var v211 = document.getElementById("id211").value;
+var v311 = document.getElementById("id311").value;
+var v51 = document.getElementById("id51").value;
+var v6 = document.getElementById("id6").value;
+var v7 = document.getElementById("id7").value;
+var v411;
+
+if (v111 == "A" && v211 == "B" && v51 == "a") {
+v211 = Math.asin(v6*Math.sin(v311*Math.PI/180)/v7)*180/Math.PI;
+v111 = 180 - v311 - v211;
+v51 = Math.sin(v111*Math.PI/180)*v7/Math.sin(v311*Math.PI/180);
+v411 = "B = " + v211.toFixed(4) + "<sup>o</sup>, A = " + v111.toFixed(4) + "<sup>o</sup>, a = " + v51.toFixed(4);
+}
+
+else if  (v111 == "A" && v211 == "B" && v6 == "b") {
+v111 = Math.asin(v51*Math.sin(v311*Math.PI/180)/v7)*180/Math.PI;
+v211 = 180 - v311 - v111;
+v6 = Math.sin(v211*Math.PI/180)*v7/Math.sin(v311*Math.PI/180);
+v411 = "B = " + v211.toFixed(4) + "<sup>o</sup>, A = " + v111.toFixed(4) + "<sup>o</sup>, b = " + v6.toFixed(4);
+}
+
+else if (v111 == "A" && v311 == "C" && v7 == "c") {
+v111 = Math.asin(v51*Math.sin(v211*Math.PI/180)/v6)*180/Math.PI;
+v311 = 180 - v211 - v111;
+v7 = Math.sin(v311*Math.PI/180)*v6/Math.sin(v211*Math.PI/180);
+v411 = "C = " + v311.toFixed(4) + "<sup>o</sup>, A = " + v111.toFixed(4) + "<sup>o</sup>, b = " + v7.toFixed(4);
+}
+
+else if  (v111 == "A" && v311 == "C" && v51 == "a") {
+v311 = Math.asin(v7*Math.sin(v211*Math.PI/180)/v6)*180/Math.PI;
+v111 = 180 - v211 - v311;
+v51 = Math.sin(v111*Math.PI/180)*v6/Math.sin(v211*Math.PI/180);
+v411 = "C = " + v311.toFixed(4) + "<sup>o</sup>, A = " + v111.toFixed(4) + "<sup>o</sup>, a = " + v51.toFixed(4);
+}
+
+else if (v211 == "B" && v311 == "C" && v6 == "b") {
+v311 = Math.asin(v7*Math.sin(v111*Math.PI/180)/v51)*180/Math.PI;
+v211 = 180 - v111 - v311;
+v6 = Math.sin(v211*Math.PI/180)*v51/Math.sin(v111*Math.PI/180);
+v411 = "C = " + v311.toFixed(4) + "<sup>o</sup>, B = " + v211.toFixed(4) + "<sup>o</sup>, b = " + v6.toFixed(4);
+}
+
+else if  (v211 == "B" && v311 == "C" && v7 == "c") {
+v211 = Math.asin(v6*Math.sin(v111*Math.PI/180)/v51)*180/Math.PI;
+v311 = 180 - v111 - v211;
+v7 = Math.sin(v311*Math.PI/180)*v51/Math.sin(v111*Math.PI/180);
+v411 = "C = " + v311.toFixed(4) + "<sup>o</sup>, B = " + v211.toFixed(4) + "<sup>o</sup>, c = " + v7.toFixed(4);
+}
+
+else if (v111 == "A" && v51 == "a" && v6 == "b") {
+v111 = 180 - v211 - v311;
+v51 = Math.sin(v111*Math.PI/180)*v7/Math.sin(v311*Math.PI/180);
+v6 = Math.sin(v211*Math.PI/180)*v51/Math.sin(v111*Math.PI/180);
+v411 = "A = " + v111.toFixed(4) + "<sup>o</sup>, a = " + v51.toFixed(4) + ", b = " + v6.toFixed(4);
+}
+
+else if (v111 == "A" && v51 == "a" && v7 == "c") {
+v111 = 180 - v211 - v311;
+v51 = Math.sin(v111*Math.PI/180)*v6/Math.sin(v211*Math.PI/180);
+v7 = Math.sin(v311*Math.PI/180)*v51/Math.sin(v111*Math.PI/180);
+v411 = "A = " + v111.toFixed(4) + "<sup>o</sup>, a = " + v51.toFixed(4) + ", c = " + v7.toFixed(4);
+}
+
+else if (v211 == "B" && v51 == "a" && v6 == "b") {
+v211 = 180 - v111 - v311;
+v51 = Math.sin(v111*Math.PI/180)*v7/Math.sin(v311*Math.PI/180);
+v6 = Math.sin(v211*Math.PI/180)*v7/Math.sin(v311*Math.PI/180);
+v411 = "B = " + v211.toFixed(4) + "<sup>o</sup>, a = " + v51.toFixed(4) + ", b = " + v6.toFixed(4);
+}
+
+else if (v211 == "B" && v7 == "c" && v6 == "b") {
+v211 = 180 - v111 - v311;
+v7 = Math.sin(v311*Math.PI/180)*v51/Math.sin(v111*Math.PI/180);
+v6 = Math.sin(v211*Math.PI/180)*v51/Math.sin(v111*Math.PI/180);
+v411 = "B = " + v211.toFixed(4) + "<sup>o</sup>, c = " + v7.toFixed(4) + ", b = " + v6.toFixed(4);
+}
+
+else if (v311 == "C" && v7 == "c" && v51 == "a") {
+v311 = 180 - v211 - v111;
+v51 = Math.sin(v111*Math.PI/180)*v6/Math.sin(v211*Math.PI/180);
+v7 = Math.sin(v311*Math.PI/180)*v51/Math.sin(v111*Math.PI/180);
+v411 = "C = " + v311.toFixed(4) + "<sup>o</sup>, c = " + v7.toFixed(4) + ", a = " + v51.toFixed(4);
+}
+
+else if (v311 == "C" && v7 == "c" && v6 == "b") {
+v311 = 180 - v211 - v111;
+v6 = Math.sin(v211*Math.PI/180)*v51/Math.sin(v111*Math.PI/180);
+v7 = Math.sin(v311*Math.PI/180)*v51/Math.sin(v111*Math.PI/180);
+v411 = "C = " + v311.toFixed(4) + "<sup>o</sup>, c = " + v7.toFixed(4) + ", b = " + v6.toFixed(4);
+}
+
+else if (v311 == "C" && v51 == "a" && v6 == "b") {
+v311 = 180 - v211 - v111;
+v51 = Math.sin(v111*Math.PI/180)*v7/Math.sin(v311*Math.PI/180);
+v6 = Math.sin(v211*Math.PI/180)*v7/Math.sin(v311*Math.PI/180);
+v411 = "C = " + v311.toFixed(4) + "<sup>o</sup>, a = " + v51.toFixed(4) + ", b = " + v6.toFixed(4);
+}
+
+else if (v211 == "B" && v51 == "a" && v7 == "c") {
+v211 = 180 - v311 - v111;
+v51 = Math.sin(v111*Math.PI/180)*v6/Math.sin(v211*Math.PI/180);
+v7 = Math.sin(v311*Math.PI/180)*v51/Math.sin(v111*Math.PI/180);
+v411 = "B = " + v211.toFixed(4) + "<sup>o</sup>, a = " + v51.toFixed(4) + ", c = " + v7.toFixed(4);
+}
+
+else if (v111 == "A" && v6 == "b" && v7 == "c") {
+v111 = 180 - v311 - v211;
+v6 = Math.sin(v211*Math.PI/180)*v51/Math.sin(v111*Math.PI/180);
+v7 = Math.sin(v311*Math.PI/180)*v51/Math.sin(v111*Math.PI/180);
+v411 = "A = " + v111.toFixed(4) + "<sup>o</sup>, b = " + v6.toFixed(4) + ", c = " + v7.toFixed(4);
+}
+
+else if (v111 == "A" && v211 == "B" && v7 == "c") {
+v7 = Math.sqrt(v51*v51 + v6*v6 - 2*v51*v6*Math.cos(v311*Math.PI/180));
+v111 = Math.asin(v51*Math.sin(v311*Math.PI/180)/v7)*180/Math.PI;
+v211 = 180 - v311 - v111;
+v411 = "A = " + v111.toFixed(4) + "<sup>o</sup>, B = " + v211.toFixed(4) + "<sup>o</sup>, c = " + v7.toFixed(4);
+}
+
+else if (v111 == "A" && v311 == "C" && v6 == "b") {
+v6 = Math.sqrt(v51*v51 + v7*v7 - 2*v51*v7*Math.cos(v211*Math.PI/180));
+v111 = Math.asin(v51*Math.sin(v211*Math.PI/180)/v6)*180/Math.PI;
+v311 = 180 - v211 - v111;
+v411 = "A = " + v111.toFixed(4) + "<sup>o</sup>, C = " + v311.toFixed(4) + "<sup>o</sup>, b = " + v6.toFixed(4);
+}
+
+else if (v211 == "B" && v311 == "C" && v51 == "a") {
+v51 = Math.sqrt(v6*v6 + v7*v7 - 2*v6*v7*Math.cos(v111*Math.PI/180));
+v211 = Math.asin(v6*Math.sin(v111*Math.PI/180)/v51)*180/Math.PI;
+v311 = 180 - v211 - v111;
+v411 = "B = " + v211.toFixed(4) + "<sup>o</sup>, C = " + v311.toFixed(4) + "<sup>o</sup>, a = " + v51.toFixed(4);
+}
+
+else if (v111 == "A" && v211 == "B" && v311 == "C") {
+v111 = Math.acos((v6*v6+v7*v7-v51*v51)/(2*v6*v7))*180/Math.PI;
+v211 = Math.asin(v6*Math.sin(v111*Math.PI/180)/v51)*180/Math.PI;
+v311 = 180 - v211 - v111;
+v411 = "B = " + v211.toFixed(4) + "<sup>o</sup>, C = " + v311.toFixed(4) + "<sup>o</sup>, A = " + v111.toFixed(4) + "<sup>o</sup>";
+}
+
+else if (v51 == "a" && v6 == "b" && v7 =="c") {
+v411 = "The values of a, b and c <br> can not be found.";
+}
+
+else {
+v411 = "Incorrect input; see instructions above.";
+}
+
+document.getElementById("id411").innerHTML = v411;
+}
+</SCRIPT> 
+</BODY>
+</HTML> 

@@ -1,0 +1,196 @@
+<HTML> 
+<HEAD>
+   <TITLE>Basic Algebra </TITLE>
+   <META CHARSET="utf-8">
+   <META CONTENT="width=device-width, initial-scale=1" NAME="viewport">
+   <SCRIPT SRC="2q.min.js"></SCRIPT> 
+   <SCRIPT SRC="1.min.js"></SCRIPT> 
+   <LINK HREF="1.min.css" REL="stylesheet">
+   <LINK HREF="bra.css" REL="stylesheet" TYPE="text/css" />
+   <SCRIPT SRC="alg.js" TYPE="text/javascript"></SCRIPT> 
+</HEAD>
+<BODY>
+<NAV CLASS="navbar navbar-inverse navbar-fixed-top"> 
+<DIV CLASS="container-fluid"> 
+   <DIV CLASS="navbar-header"> 
+      <BUTTON CLASS="navbar-toggle" DATA-TARGET="#myNavbar"
+              DATA-TOGGLE="collapse" TYPE="button"> <SPAN CLASS="icon-bar"></SPAN>
+      <SPAN CLASS="icon-bar"></SPAN> <SPAN CLASS="icon-bar"></SPAN> 
+      </BUTTON> <A CLASS="navbar-brand" HREF="../WebSite/StartPage.html">618-Math Home</A> 
+   </DIV>
+   <DIV CLASS="collapse navbar-collapse" ID="myNavbar"> 
+      <UL CLASS="nav navbar-nav">
+         <LI CLASS="dropdown">
+         <A CLASS="dropdown-toggle" DATA-TOGGLE="dropdown" HREF="#">Trigonometry<SPAN CLASS="caret"></SPAN></A>
+         
+         <UL CLASS="dropdown-menu">
+            <LI><A HREF="../Trigomometry/Pythagoras' theorem.html">Pythagoras</A></LI>
+            
+            <LI><A HREF="../Trigomometry/Sin Cos Tan.html">Sin Cos Tan</A></LI>
+            
+            <LI><A HREF="../Trigomometry/sin cos rules area triangle.html">Rules
+            and Area</A></LI> 
+         </UL></LI>
+         <LI CLASS="dropdown">
+         <A CLASS="dropdown-toggle" DATA-TOGGLE="dropdown" HREF="#">Algebra<SPAN CLASS="caret"></SPAN></A>
+         
+         <UL CLASS="dropdown-menu">
+            <LI><A HREF="../algebra/algebra.html">Basic Algebra</A></LI> 
+            <LI><A HREF="../algebra/algebra1.html">Simultaneous Equations</A></LI>
+            
+            <LI><A HREF="../algebra/algebra2.html">Quadratic Equations</A></LI>
+            
+         </UL></LI>
+         <LI><A HREF="../GCSE GUIDE HTML/FIRST PAGE.html" TARGET="_blank">Study
+         Guide</A></LI> 
+         <LI><A HREF="../trig calculator/trigcalc.html" TARGET="_blank">Trig
+         Calculator</A></LI> 
+         <LI><A HREF="../statbus/statbus.html" TARGET="_blank">Stat Bus</A></LI>
+         
+      </UL>
+      <UL CLASS="nav navbar-nav navbar-right">
+         <LI><A href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' TARGET="_blank"><SPAN CLASS="glyphicon glyphicon-envelope"></SPAN>
+         Contact</A></LI> 
+      </UL>
+   </DIV>
+</DIV>
+</NAV> 
+<DIV ID="bg"> 
+   <H1>Basic Algebra </H1>
+   <DIV STYLE="margin: 0 0 0 15%"> 
+      <H2>Find the value of x; addition and subtraction. </H2>
+      <BR> 
+      <H4>Question 1 </H4>
+      <BOX2> 2 + x = 5 
+      </BOX2> 
+      <BOX1 ID="d1"> 
+      <BUTTON ONCLICK="a1()">Hint</BUTTON> 
+      </BOX1> 
+
+      <P CLASS="clr"></P>
+      <BR> 
+      <BOX> 
+      <BUTTON ONCLICK="a3()">Submit x value</BUTTON> 
+      <BR> 
+      <INPUT ID="i1" TYPE="text" /> 
+      <BR> <SPAN ID="d3"></SPAN> 
+      </BOX> 
+      <BOX2 ID="d2"> 
+      <BUTTON ONCLICK="a2()">Answer</BUTTON> 
+      </BOX2> 
+
+      <P CLASS="clr"></P>
+      <BR> 
+      <H4>Question 2 </H4>
+      <BOX2> x - 6 = 3 
+      </BOX2> 
+      <BOX1 ID="d4"> 
+      <BUTTON ONCLICK="b1()">Hint</BUTTON> 
+      </BOX1> 
+
+      <P CLASS="clr"></P>
+      <BR> 
+      <BOX> 
+      <BUTTON ONCLICK="b3()">Submit x value</BUTTON> 
+      <BR> 
+      <INPUT ID="i2" TYPE="text" /> 
+      <BR> <SPAN ID="d6"></SPAN> 
+      </BOX> 
+      <BOX2 ID="d5"> 
+      <BUTTON ONCLICK="b2()">Answer</BUTTON> 
+      </BOX2> 
+
+      <P CLASS="clr"></P>
+      <BR> 
+      <H4>Question 3 </H4>
+      <BOX2> 2x - 4 = 7 + x 
+      </BOX2> 
+      <BOX1 ID="d7"> 
+      <BUTTON ONCLICK="c1()">Hint</BUTTON> 
+      </BOX1> 
+
+      <P CLASS="clr"></P>
+      <BR> 
+      <BOX> 
+      <BUTTON ONCLICK="c3()">Submit x value</BUTTON> 
+      <BR> 
+      <INPUT ID="i3" TYPE="text" /> 
+      <BR> <SPAN ID="d9"></SPAN> 
+      </BOX> 
+      <BOX2 ID="d8"> 
+      <BUTTON ONCLICK="c2()">Answer</BUTTON> 
+      </BOX2> 
+
+      <P CLASS="clr"></P>
+      <BR> 
+      <H2>Find the value of y; multiplication and division. </H2>
+      <BR> 
+      <H4>Question 4 </H4>
+      <BOX2> 2y x 3 = 12 
+      </BOX2> 
+      <BOX1 ID="d10"> 
+      <BUTTON ONCLICK="d1()">Hint</BUTTON> 
+      </BOX1> 
+
+      <P CLASS="clr"></P>
+      <BR> 
+      <BOX> 
+      <BUTTON ONCLICK="d3()">Submit y value</BUTTON> 
+      <BR> 
+      <INPUT ID="i4" TYPE="text" /> 
+      <BR> <SPAN ID="d12"></SPAN> 
+      </BOX> 
+      <BOX2 ID="d11"> 
+      <BUTTON ONCLICK="d2()">Answer</BUTTON> 
+      </BOX2> 
+
+      <P CLASS="clr"></P>
+      <BR> 
+      <H4>Question 5 </H4>
+      <BOX2> 18y / 3y = 2y 
+      </BOX2> 
+      <BOX1 ID="d13"> 
+      <BUTTON ONCLICK="e1()">Hint</BUTTON> 
+      </BOX1> 
+
+      <P CLASS="clr"></P>
+      <BR> 
+      <BOX> 
+      <BUTTON ONCLICK="e3()">Submit y value</BUTTON> 
+      <BR> 
+      <INPUT ID="i5" TYPE="text" /> 
+      <BR> <SPAN ID="d15"></SPAN> 
+      </BOX> 
+      <BOX2 ID="d14"> 
+      <BUTTON ONCLICK="e2()">Answer</BUTTON> 
+      </BOX2> 
+
+      <P CLASS="clr"></P>
+      <BR> 
+      <H2>Find the value of z; multiple variables. </H2>
+      <BR> 
+      <H4>Question 6 </H4>
+      <BOX2 ID="m3"> 8y + 3x - z = 2y + 3x + 2z 
+      </BOX2> 
+      <BOX1 ID="d16"> 
+      <BUTTON ONCLICK="g1()">Hint</BUTTON> 
+      </BOX1> 
+
+      <P CLASS="clr"></P>
+      <BR> 
+      <BOX> 
+      <BUTTON ONCLICK="g3()">Submit z value</BUTTON> 
+      <BR> 
+      <INPUT ID="i6" TYPE="text" /> 
+      <BR> <SPAN ID="d18"></SPAN> 
+      </BOX> 
+      <BOX2 ID="d17"> 
+      <BUTTON ONCLICK="g2()">Answer</BUTTON> <SPAN /> 
+      </BOX2> 
+
+      <P CLASS="clr"></P>
+      <BR> 
+   </DIV>
+</DIV>
+</BODY>
+</HTML> 

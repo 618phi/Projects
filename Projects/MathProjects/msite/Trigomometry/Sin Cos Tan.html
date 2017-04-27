@@ -1,0 +1,170 @@
+<!DOCTYPE html> 
+<HTML LANG="en"> 
+<HEAD>
+   <TITLE>Sin, Cosine and Tangent </TITLE>
+   <META CHARSET="utf-8">
+   <META CONTENT="width=device-width, initial-scale=1" NAME="viewport">
+   <SCRIPT SRC="2q.min.js"></SCRIPT> 
+   <SCRIPT SRC="1.min.js"></SCRIPT> 
+   <LINK HREF="1.min.css" REL="stylesheet">
+   <LINK HREF="trig.css" REL="stylesheet" TYPE="text/css" />
+   <SCRIPT SRC="qry.js"></SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id1").click(function() {
+        $("#id3").css({"width": "45%", "margin": "0 0 0 10%"}).show();
+    });
+});
+   </SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id2").click(function() {
+        $("#id3").hide();
+    });
+});
+   </SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id5").click(function() {
+        $("#a1").addClass("hide");
+    });
+});
+   </SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id4").click(function() {
+        $("#a1").removeClass("hide");
+    });
+});
+   </SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id6").click(function() {
+        $("#id8").css({"float": "left"}).addClass("pad br fnt").html("tan(73) = h / (66 / 2)<br>&there4; h = 33*tan(73)<br>&there4; h = 107.9381<br>&there4; triangle height = 107.94m" ).show();
+    });
+});
+   </SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id7").click(function() {
+        $("#id9").addClass("fr pad fnt").html(
+" area = 0.5 * 107.9381 * 66 <br>&there4; area = 3561.9573<br>&there4; triangle area = 3561.96m<sup>2</sup>").show();
+    });
+});
+   </SCRIPT> 
+   <SCRIPT>
+$(document).ready(function() {
+    $("#id10").click(function() {
+        $("#id8, #id9").hide();
+    });
+});
+   </SCRIPT> 
+</HEAD>
+<BODY>
+<NAV CLASS="navbar navbar-inverse navbar-fixed-top"> 
+<DIV CLASS="container-fluid"> 
+   <DIV CLASS="navbar-header"> 
+      <BUTTON CLASS="navbar-toggle" DATA-TARGET="#myNavbar"
+              DATA-TOGGLE="collapse" TYPE="button"> <SPAN CLASS="icon-bar"></SPAN>
+      <SPAN CLASS="icon-bar"></SPAN> <SPAN CLASS="icon-bar"></SPAN> 
+      </BUTTON> <A CLASS="navbar-brand" HREF="../WebSite/StartPage.html">618-Math Home</A> 
+   </DIV>
+   <DIV CLASS="collapse navbar-collapse" ID="myNavbar"> 
+      <UL CLASS="nav navbar-nav">
+         <LI CLASS="dropdown">
+         <A CLASS="dropdown-toggle" DATA-TOGGLE="dropdown" HREF="#">Trigonometry<SPAN CLASS="caret"></SPAN></A>
+         
+         <UL CLASS="dropdown-menu">
+            <LI><A HREF="../Trigomometry/Pythagoras' theorem.html">Pythagoras</A></LI>
+            
+            <LI><A HREF="../Trigomometry/Sin Cos Tan.html">Sin Cos Tan</A></LI>
+            
+            <LI><A HREF="../Trigomometry/sin cos rules area triangle.html">Rules
+            and Area</A></LI> 
+         </UL></LI>
+         <LI CLASS="dropdown">
+         <A CLASS="dropdown-toggle" DATA-TOGGLE="dropdown" HREF="#">Algebra<SPAN CLASS="caret"></SPAN></A>
+         
+         <UL CLASS="dropdown-menu">
+            <LI><A HREF="../algebra/algebra.html">Basic Algebra</A></LI> 
+            <LI><A HREF="../algebra/algebra1.html">Simultaneous Equations</A></LI>
+            
+            <LI><A HREF="../algebra/algebra2.html">Quadratic Equations</A></LI>
+            
+         </UL></LI>
+         <LI><A HREF="../GCSE GUIDE HTML/FIRST PAGE.html" TARGET="_blank">Study
+         Guide</A></LI> 
+         <LI><A HREF="../trig calculator/trigcalc.html" TARGET="_blank">Trig
+         Calculator</A></LI> 
+         <LI><A HREF="../statbus/statbus.html" TARGET="_blank">Stat Bus</A></LI>
+         
+      </UL>
+      <UL CLASS="nav navbar-nav navbar-right">
+         <LI><A href='https://www.youtube.com/channel/UCz-ViYfEMUhFREpuUhqEImQ' TARGET="_blank"><SPAN CLASS="glyphicon glyphicon-envelope"></SPAN>
+         Contact</A></LI> 
+      </UL>
+   </DIV>
+</DIV>
+</NAV> 
+<DIV ID="bg"> 
+   <H1>Sin Cos and Tan </H1>
+   <H3>Question 1 </H3>
+   <H4>Use <SPAN STYLE="color:white;">sin</SPAN> to find the length of side
+   y. Use <SPAN STYLE="color:purple;">cos</SPAN> to find the length of side
+   x. Give answers correct to 2 decimal places. </H4>
+   <IMG CLASS="fl" SRC="pics\x y 15 triangle.jpg" /> 
+   <BUTTON ID="id1"> Click for worked answers. 
+   </BUTTON> 
+   <BUTTON ID="id2"> Click to hide answers. 
+   </BUTTON> 
+   <BR><BR> 
+   <IMG ID="id3" SRC="pics\trig1.jpg" STYLE="width:0%; float: left" /> 
+
+   <P CLASS="clr"></P>
+   <BR> 
+   <H3>Question 2 </H3>
+   <H4>Use Pythagorus' theorem to find side x. Then use 
+   <SPAN STYLE="color: brown;">tan</SPAN> to find angle &theta;. Use 4
+   decimal places when working out, but show your answers correct to 2
+   decimal places. </H4>
+   <IMG CLASS="fl" SRC="pics\6.5 ll.5 x triangle.jpg" /> 
+   <BUTTON ID="id4"> Click for worked answer. 
+   </BUTTON> 
+   <BUTTON ID="id5"> Click to hide answers. 
+   </BUTTON> 
+   <BR><BR> 
+   <BOX CLASS="hide" ID="a1"> <SPAN STYLE="padding: 2%; float: left;"> 11.5<SUP>2</SUP>
+   = 6.5<SUP>2</SUP> + x<SUP>2</SUP> 
+   <BR> &therefore; x<SUP>2</SUP> = 11.5<SUP>2</SUP> - 6.5<SUP>2</SUP> 
+   <BR> &therefore; x = &radic;(11.5<SUP>2</SUP> - 6.5<SUP>2</SUP>) = 9.4868 
+   <BR> &therefore; side x = 9.49m </SPAN> 
+   <SPAN STYLE="color: brown; padding: 2%; float: right"> tan&theta; = 6.5
+   / 9.4868 
+   <BR> &there4; tan&theta; = 0.6852 
+   <BR> &there4; &theta; = tan<SUP>-1</SUP>(0.6852) = 34.4189 
+   <BR> &there4; angle &theta; = 34.42<SUP>o</SUP> </SPAN> 
+   </BOX> 
+
+   <P CLASS="clr"></P>
+   <BR> 
+   <H3>Question 3 </H3>
+   <H4>Find the area of the isosceles triangle below. Only use the given
+   angle of 73<SUP>o</SUP> and the <SPAN STYLE="color: brown;">tan</SPAN>
+   ratio to get the triangle height. Use 4 decimal places when working out,
+   but show your answers correct to 2 decimal places. </H4>
+   <IMG CLASS="fl" SRC="pics\73 73 34 triangle.jpg" /> 
+   <BUTTON ID="id6"> Click for height answer. 
+   </BUTTON> 
+   <BUTTON ID="id7"> Click for area answer. 
+   </BUTTON> 
+   <BUTTON ID="id10"> Click to hide answers. 
+   </BUTTON> 
+   <BR><BR> 
+   <BOX1> <SPAN ID="id8"></SPAN> <SPAN ID="id9"></SPAN> 
+   </BOX1> 
+
+   <P CLASS="clr"></P>
+   <BR> 
+</DIV>
+</BODY>
+</HTML> 
