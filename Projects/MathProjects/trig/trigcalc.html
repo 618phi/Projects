@@ -35,7 +35,7 @@ margin:2% 0 0 5%; color: blue; text-shadow: 2px 2px 2px black;
    <DIV CLASS="jumbotron"
         STYLE="text-align: center; border-radius:20%; background: seashell; ">
       
-      <H1 ID="a">Trigonometry Calculators </H1>
+      <H1 ID="a">Trigonometry Calculators</H1>
       <H3 CLASS="hidden-xs">
       <UL>
          <LI>If the unknown value is Q, input Q for the Q value.</LI> 
@@ -45,16 +45,19 @@ margin:2% 0 0 5%; color: blue; text-shadow: 2px 2px 2px black;
          number only. </LI>
          <LI>All inputs are case-sensitive and all answers are given to 4
          decimal places.</LI> 
+		<LI>When using the cos/sin rule calculator with only one known angle and one of the sides forming the known angle
+         unknown, there may be another possible triangle solution to the solution given.</LI>
       </UL></H3>
       <H4 CLASS="visible-xs">
       <UL>
          <LI>If the unknown value is Q, input Q for the Q value.</LI> 
-         <LI>If the unknown value is h, input h for the h value; and so on.</LI>
-         
+         <LI>If the unknown value is h, input h for the h value; and so on.</LI> 
          <LI>All angle values are in degrees and should be entered as a
          number only. </LI>
          <LI>All inputs are case-sensitive and all answers are given to 4
          decimal places.</LI> 
+		 <LI>When using the cos/sin rule calculator with only one known angle and one of the sides forming the known angle
+         unknown, there may be another possible triangle solution to the solution given.</LI>
       </UL></H4>
    </DIV>
    <DIV CLASS="row"> 
@@ -314,28 +317,28 @@ v411 = "A = " + v111.toFixed(4) + "<sup>o</sup>, b = " + v6.toFixed(4) + ", c = 
 
 else if (v111 == "A" && v211 == "B" && v7 == "c") {
 v7 = Math.sqrt(v51*v51 + v6*v6 - 2*v51*v6*Math.cos(v311*Math.PI/180));
-v111 = Math.asin(v51*Math.sin(v311*Math.PI/180)/v7)*180/Math.PI;
+v111 = Math.acos((v6*v6+v7*v7-v51*v51)/(2*v6*v7))*180/Math.PI;
 v211 = 180 - v311 - v111;
 v411 = "A = " + v111.toFixed(4) + "<sup>o</sup>, B = " + v211.toFixed(4) + "<sup>o</sup>, c = " + v7.toFixed(4);
 }
 
 else if (v111 == "A" && v311 == "C" && v6 == "b") {
 v6 = Math.sqrt(v51*v51 + v7*v7 - 2*v51*v7*Math.cos(v211*Math.PI/180));
-v111 = Math.asin(v51*Math.sin(v211*Math.PI/180)/v6)*180/Math.PI;
+v111 = Math.acos((v6*v6+v7*v7-v51*v51)/(2*v6*v7))*180/Math.PI;
 v311 = 180 - v211 - v111;
 v411 = "A = " + v111.toFixed(4) + "<sup>o</sup>, C = " + v311.toFixed(4) + "<sup>o</sup>, b = " + v6.toFixed(4);
 }
 
 else if (v211 == "B" && v311 == "C" && v51 == "a") {
 v51 = Math.sqrt(v6*v6 + v7*v7 - 2*v6*v7*Math.cos(v111*Math.PI/180));
-v211 = Math.asin(v6*Math.sin(v111*Math.PI/180)/v51)*180/Math.PI;
+v211 = Math.acos((v51*v51+v7*v7-v6*v6)/(2*v51*v7))*180/Math.PI;
 v311 = 180 - v211 - v111;
 v411 = "B = " + v211.toFixed(4) + "<sup>o</sup>, C = " + v311.toFixed(4) + "<sup>o</sup>, a = " + v51.toFixed(4);
 }
 
 else if (v111 == "A" && v211 == "B" && v311 == "C") {
 v111 = Math.acos((v6*v6+v7*v7-v51*v51)/(2*v6*v7))*180/Math.PI;
-v211 = Math.asin(v6*Math.sin(v111*Math.PI/180)/v51)*180/Math.PI;
+v211 = Math.acos((v51*v51+v7*v7-v6*v6)/(2*v51*v7))*180/Math.PI;
 v311 = 180 - v211 - v111;
 v411 = "B = " + v211.toFixed(4) + "<sup>o</sup>, C = " + v311.toFixed(4) + "<sup>o</sup>, A = " + v111.toFixed(4) + "<sup>o</sup>";
 }
