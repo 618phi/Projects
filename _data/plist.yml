@@ -1,16 +1,23 @@
-- title: 618-Darts
-  folder: JavaProjects/darts/
+- title: 618-DB
+  folder: JavaProjects/sql/
   type: java
   source: 'https://youtu.be/8J1fYrvH1H4'
   image: 'java.png'
-  content: 'Darts scoreboard application.'
-
+  content: 'MySQL Database management application for Windows.'
+  
 - title: 618-Math
   folder: MathProjects/msite/
   type: math 
   source: 'https://youtu.be/8J1fYrvH1H4'
   image: 'math.png'
   content: 'GCSE maths website.'
+
+- title: 618-Darts
+  folder: JavaProjects/darts/
+  type: java
+  source: 'https://youtu.be/8J1fYrvH1H4'
+  image: 'java.png'
+  content: 'Darts scoreboard application.'
 
 - title: 618-Calc
   folder: MathProjects/calc/
@@ -26,13 +33,7 @@
   image: 'java.png'
   content: 'Tinnitus relief application.'
   order: last
-
-- title: 618-DB
-  folder: JavaProjects/sql/
-  type: java
-  source: 'https://youtu.be/8J1fYrvH1H4'
-  image: 'java.png'
-  content: 'MySQL Database management application for Windows.'
+  
   
 
   
